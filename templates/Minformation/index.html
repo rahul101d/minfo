@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="icon" type="image/png" href="{%static 'images/marlogo.png'%}"/>
+    <link rel="stylesheet" href="{%static 'css/userform.css'%}">
+    <style>
+      .sign-up-container{
+        background-image: url("{%static 'images/rightaven1.jpg'%}");
+        background-repeat: no-repeat;
+        background-size:cover;
+        
+      }
+      .container{
+        background-image: url("{%static 'images/avenhome.jpg'%}");
+
+      }
+
+      #forget:hover{
+        color: aliceblue;
+        
+      }
+    </style>
+</head>
+<body>
+
+  <div class="container" id="container">
+    <div class="form-container sign-up-container" >
+      <form method="post">
+        {%csrf_token%}
+        <h1>Create Account</h1>
+        <input type="text" placeholder="Username" name="username" id="username" />
+        <input type="email" placeholder="Email" name="email" id="email" />
+        <input type="password" placeholder="Password" name="password1" id="password1"/>
+        <input type="password" placeholder="Confirm Password" name="password2" id="password2" />
+        <button type="submit" id="button12"><a class="id2" >Sign Up</a></button>
+      </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form action="" method="post">
+        {%csrf_token%}
+        <h1>Sign in</h1>
+        <input type="text" placeholder="Username" name="username"/>
+        <input type="password" placeholder="Password" name="password" />
+        {%if messages%}
+        {%for a1 in messages%}
+        <label style="color: rgb(173, 31, 31);">{{a1}}</label>
+        {%endfor%}
+       {%endif%}
+          <h4 id="forget"><a href="/reset_password" id="forget">Forgot your password?</a></h4>
+        <button type="submit"><a class="id2">Sign In</a></button>
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Welcome Back!</h1>
+          <p>To keep connected with us please login with your personal info</p>
+          <button class="ghost" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Friend!</h1>
+          <p>Enter your personal details and start journey with us</p>
+          <button class="ghost" id="signUp">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+  </script>
+  <script>
+		let docTitle=document.title;
+window.addEventListener('blur',()=>{
+  document.title='Bhai aaja Vapis';
+});
+window.addEventListener('focus',()=>{
+  document.title=docTitle;
+});
+	</script>
+  <script>
+  
+  </script>
+</body>
+
+</html>

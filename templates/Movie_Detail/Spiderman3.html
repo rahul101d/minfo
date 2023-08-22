@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="{%static 'images/marlogo.png'%}"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man 3</title>
+    <link rel="stylesheet" href="{%static 'MovieCss/Spiderman3.css'%}">
+    <style>
+      .pic1{
+          background-image:url("{%static 'images/Spiderman3intro.jpg'%}");
+
+      }
+  </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="/nav">MARVEL</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="/nav" >Home</a></li>
+                    <li><a href="/marvelmovies">Movies</a></li>
+                    <li><a href="/series">Web-Series</a></li>
+                    <li><a href="/phase">Phases</a></li>
+                    <li><a href="/demo">Characters</a></li>
+                    <li><a href="/accounts/logout">Logout</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <div class="pic1">
+      <div  class="pic">
+          <video id="vedio" autoplay muted loop height="500px" width="1900px" onload="onloadfunc()">
+              <!--<source src="{%static 'video/intronav.mp4'%}" type="video/mp4">
+              <source id="w1" src="{%static 'video/intronav.mp4'%}" type="video/mp4">-->
+            </video>
+      </div>
+
+  </div>
+
+    <h2 class="h21">Spider-Man 3</h2>    
+      <div class="divrow"  style="height: 400px; margin-left: 300px;">
+        <div class="po">
+          <div class="card">
+              <div class="wrapper">
+                <img src="{%static 'images/spaiderman3.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <img src="{%static 'images/spiderman3title.png'%}" alt="" class="title">
+              <img src="{%static 'images/spiderman3c.png'%}" alt="" id="spiderman3">
+            </div>
+      </div>
+      
+      <div class="po" style="margin-left: 40px;">
+        <table>
+          <tr id="tr">
+            <td id="td">Directed by</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.google.com/search?gs_ssp=eJzj4tDP1TcwNyrLMmD04ixOzFUoSszMzQQAP3QGTg&q=sam+raimi&rlz=1C1CHBF_enIN986IN986&oq=sam+&gs_lcrp=EgZjaHJvbWUqDwgEEC4YQxiDARixAxiKBTIGCAAQRRg5MgkIARAAGEMYigUyBggCEEUYOzIGCAMQRRg7Mg8IBBAuGEMYgwEYsQMYigUyBggFEEUYPDIGCAYQRRg8MgYIBxBFGD3SAQgzNDU1ajBqNKgCALACAA&sourceid=chrome&ie=UTF-8">	Sam Raimi</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Based on</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.marvel.com/comics/issue/6482/the_amazing_spider-man_1963_1">	
+                Spider-Man
+                by Stan Lee
+                Steve Ditko</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Produced by</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.google.com/search?q=laura+ziskin&rlz=1C1CHBF_enIN986IN986&oq=Laura+Ziskin&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyBwgBEC4YgAQyBwgCEAAYgAQyCAgDEAAYFhgeMggIBBAAGBYYHjIICAUQABgWGB4yCAgGEAAYFhgeMggIBxAAGBYYHjIICAgQABgWGB4yCggJEAAYhgMYigXSAQc2MzJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">Laura Ziskin</a></td>
+          </tr>	
+          <tr id="tr">
+            <td id="td">Production Company</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.marvel.com/movies">Marvel Studios</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Release Date</td>
+            <td id="td1">:</td>
+            <td id="td">May 4, 2007</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Running time</td>
+            <td id="td1">:</td>
+            <td id="td">2 Hour 19 Minutes</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Budget	</td>
+            <td id="td1">:</td>
+            <td id="td">$258–350 million</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Box office</td>
+            <td id="td1">:</td>
+            <td id="td">	$895 million</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Rating</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.imdb.com/title/tt0413300/">6.3/10 IMDb</a> | <a target="_blank" href="https://www.rottentomatoes.com/m/spiderman_3">63% Rotten Tomatoes</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+      <h2 class="h2">Spider-Man 3 Official Trailer</h2>
+      <div class="divrow" style="height: 640px;">
+        <iframe id="iframe" width="1200" height="600" src="https://www.youtube.com/embed/e5wUilOeOmg" title="SPIDER-MAN 3 [2007] - Official Trailer (HD)" frameborder="1px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
+      </div>
+
+      <!--Movie Cast-->
+      <h2 class="h2">Movie Cast</h2>
+      <div class="divrow" style="height: 260px;">
+        <div class="po"><a target="_blank" title="Tobey Maguire" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Tobey+Maguire&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwzMzYoi88pU-LUz9U3MDQtyE7WEspOttJPy8zJBRNWyYnFJYtYeUPyk1IrFXwT00szi1J3sDJOYGMEAFUJYgVGAAAA&lei=SM3EZLyQCY6cseMPid2osA0">
+          <div class="card1">
+            <div class="wrapper1">
+              <img src="https://m.media-amazon.com/images/M/MV5BMTYwMTI5NTM2OF5BMl5BanBnXkFtZTcwODk3MDQ2Mg@@._V1_FMjpg_UX1000_.jpg" class= "cover-image1" alt="">
+            </div>
+            <div class="wrapper2"><h2 class="heading1" >Tobey Maguire</h2></div>
+          </div></a> 
+      </div>
+      <div class="po"><a target="_blank" title="Thomas Haden Church" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Thomas+Haden+Church&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwzMzYoi88pU-LUz9U3MDYxzDPVEspOttJPy8zJBRNWyYnFJYtYhUMy8nMTixU8ElNS8xScM0qLkjN2sDJOYGMEADtlkmRMAAAA&lei=i8_EZI7-L6ziseMP18uBuAw">
+        <div class="card1">
+            <div class="wrapper1">
+              <img src="https://i.guim.co.uk/img/media/c8245d04a38778a85655560a7d9056f5886278bf/0_115_2604_1562/master/2604.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=1ea4c333a694e19964f672d891815509" class= "cover-image1" alt="">
+            </div>
+            <div class="wrapper2"><h2 class="heading1" style="margin-bottom: 130px;">Thomas Haden Church</h2></div>
+        </div></a> 
+       </div>
+      
+        <div class="po"><a target="_blank" title="J. K. Simmons" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=J.+K.+Simmons&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwzMzYoi88pU-LUz9U3MDEpKkvSEspOttJPy8zJBRNWyYnFJYtYeb30FLz1FIIzc3Pz84p3sDJOYGMEAMpLJcpGAAAA&lei=vs_EZKeiCeK7seMPnNmyyAc">
+          <div class="card1">
+              <div class="wrapper1">
+                <img src="https://flxt.tmsimg.com/assets/72076_v9_bb.jpg" class= "cover-image1" alt="">
+              </div>
+              <div class="wrapper2"><h2 class="heading1">J. K. Simmons</h2></div>
+          </div></a> 
+         </div>
+        <div class="po"><a target="_blank" title="Kirsten Dunst" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Kirsten+Dunst&stick=H4sIAAAAAAAAAONgFuLUz9U3MDQqNkxR4gAxTdKqsrWEspOt9NMyc3LBhFVyYnHJIlZe78yi4pLUPAWX0rzikh2sjBPYGAE6ODNPQQAAAA&lei=qUTGZIXiKcmVseMP2uWZoAg">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Kirsten_Dunst_Cannes_2016.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Kirsten Dunst</h2></div>
+              </div></a> 
+          </div>
+          <div class="po"><a target="_blank" title="James Franco" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=James+Franco&stick=H4sIAAAAAAAAAONgFuLUz9U3MDQqNkxRAjNNk_IKDLSEspOt9NMyc3LBhFVyYnHJIlYer8Tc1GIFt6LEvOT8HayME9gYAQSP-FlBAAAA&lei=CEXGZMCACuSRseMPzvaeuAk">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://flxt.tmsimg.com/assets/167024_v9_bb.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">James Franco</h2></div>
+              </div></a> 
+          </div>
+          <div class="po"><a target="_blank" title="Cliff Robertson" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Cliff+Robertson&stick=H4sIAAAAAAAAAONgFuLUz9U3MDQqNkxRgjBN04vLtISyk6300zJzcsGEVXJicckiVn7nnMy0NIWg_KTUopLi_LwdrIwT2BgB_6l-WkQAAAA&lei=o0XGZNakOIjNseMPz7WVwA8">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://m.media-amazon.com/images/M/MV5BMTI2Nzc1MzM0Ml5BMl5BanBnXkFtZTYwNTA0ODk1._V1_.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Cliff Robertson</h2></div>
+              </div></a> 
+          </div>
+          <div class="po"><a target="_blank" title="Rosemary Harris" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Rosemary+Harris&stick=H4sIAAAAAAAAAONgFuLUz9U3MDQqNkxRAjPN0woNK7WEspOt9NMyc3LBhFVyYnHJIlb-oPzi1NzEokoFj8SiosziHayME9gYAabKBXhEAAAA&lei=rEXGZOatHrDXseMPlryk6Ak">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://m.media-amazon.com/images/M/MV5BMjAzOTExOTE1NF5BMl5BanBnXkFtZTYwNDY0ODk1._V1_FMjpg_UX1000_.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Rosemary Harris</h2></div>
+              </div></a> 
+          </div>
+
+      </div>
+
+      <!--Overview-->
+      <h2 class="h2">Spider-Man 3 Overview</h2>
+      <div class="divrow" style="height: 100px;">
+        <div class="po" style="margin-right: 40px; margin-left: 33px;padding: 0px 20px 20px 20px;">
+          <p id="para">Peter Parker finally has the girl of his dreams, Mary Jane Watson, and New York City is in the throes of Spider-mania! But when a strange alien symbiote turns Spider-Man's suit black, his darkest demons come to light, changing Spider-Man inside as well as out. Spider-Man is in for the fight of his life against a lethal mix of villains—the deadly Sandman, Venom, and the New Goblin—as well as the enemy within himself.
+
+        </p>
+        </div>
+      </div>
+
+      <h2 class="h2">Characters</h2>
+      <div class="divrow" style="height: 370px;">
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/spider-man-peter-parker/in-comics">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/Spiderman1Tobey.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Spider-man</h2></div>
+            </div></a> 
+          </div>
+          <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/sandman-william-baker/in-comics">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/SpaidermanSandman.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Sandman</h2></div>
+            </div></a> 
+          </div>
+          <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/venom-eddie-brock/in-comics">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/VenonVenom.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Venom</h2></div>
+            </div></a> 
+          </div>
+        
+      </div>
+
+
+      <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">MarvelInfo is a web-page where you can find all the information regarding Marvel Movies, Series and Characters</p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+              </div>
+              <div class="email">
+                <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-envelope"></i>marvelinfo379@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Categories</div>
+            <div><a href="/nav" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Home</a></div>
+            <div><a href="/marvelmovies"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Movies</a></div>
+            <div><a href="/series"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Web-Series</a></div>
+            <div><a href="/phase"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Phases</a></div>
+            <div><a href="/demo"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Characters</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">
+              <img style="height: 100px;width: 500px;margin-top: 20px;" src="{%static 'images/MarvelStudio.png'%}" alt="">
+              <img style="height: 80px;width: 200px;margin-left: 160px;margin-top: 20px;" src="{%static 'images/MarvelLogo.png'%}" alt="">
+              
+            </div>
+            <!--
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+  
+            
+             <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter icon"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>-->
+          </div>
+        </div>
+        <div class="bottom">
+          <p></p>
+        </div>
+      </footer>
+  
+
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+       /* $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+});
+*/
+let docTitle=document.title;
+window.addEventListener('blur',()=>{
+  document.title='Bhai aaja Vapis';
+});
+window.addEventListener('focus',()=>{
+  document.title=docTitle;
+});
+
+</script>
+
+<script>
+  /*function My_Video() {
+            document.getElementById("w1").src =
+               "{%static 'video/intronav2.mp4'%}";
+            document.getElementById("vedio").load();
+        }
+        window.onload=My_Video()*/
+        
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" type="image/png" href="{%static 'images/marlogo.png'%}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email-Sent</title>
+    <link rel="stylesheet" href="{%static 'css/email.css'%}">
+    <style>
+        .row{
+            background-image: url( "{%static 'images/aven.jpg'%}");
+
+        }
+    </style>
+</head>
+<body>
+
+	<form method="post">
+		{% csrf_token %}
+  <div class="row">
+		
+		<h1 style="font-size: 45px;">Email Sent Successfully</h1>
+		<h2 style="font-size: 21px;" class="information-text">Password reset link sent, Please check your E-mail.</h2><br><br>
+		
+		
+    <div class="form-group">
+       
+        
+        <h2 style="text-align: justify; font-size: 18px;">We emailed you instructions for setting your password, if an account exists with the email you entered. You should receive them shortly.</h2>
+        <br>
+        <h2 style="text-align: justify;font-size: 18px;">If you don’t receive an email, please make sure you’ve entered the address you registered with, and check your spam folder.</h2>
+		
+		</div>
+    <div class="form-group">
+			
+      <button onclick="showSpinner()"  type="submit"><a style="text-decoration: none;color: black;" target="_blank" href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AeDOFXjoo7z12jnt3GVfhoOgZhEfRjeBp3sec4Eg2EXXlb3UNBo9V_InQ9OImlCe5Shx8vfgRFBg&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S2081272046%3A1690829181256567">Please Login to Gmail</a></button>
+		</div>
+		<div class="footer">
+			<h5><a  href="/form">Please click here to Sign In</a></h5>
+		</div>
+	
+	</div>
+</form>
+
+
+	<script>
+		let docTitle=document.title;
+window.addEventListener('blur',()=>{
+  document.title='Bhai aaja Vapis';
+});
+window.addEventListener('focus',()=>{
+  document.title=docTitle;
+});
+	</script>
+</body>
+</html>

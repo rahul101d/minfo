@@ -1,0 +1,1367 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+html,
+body {
+    height:1518px; 
+    width:1518px;
+    background-color: #161619;
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto;
+    font-family: 'Marvel', sans-serif;
+  font-weight: 700;
+}
+
+.nav {
+    padding: 0;
+    background-color: #201f23;
+    position: relative;
+    z-index: 15;
+    overflow: hidden;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.nav div.logo a:hover {
+    color:#EC1D24;
+}
+
+.nav div.main_list {
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-right: 0;
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 69px;
+    padding: 0;
+    padding-right: 5rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 67px;
+    font-size: 2.5rem;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #EC1D24;
+}
+
+
+/* Home section */
+.home {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-position: center top;
+	background-size:cover;
+}
+
+.navTrigger {
+    display: none;
+}
+@media screen and (min-width: 100%) and (max-width: 100%) {
+    body{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/* Media qurey section */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navTrigger {
+        display: block;
+    }
+    .nav div.logo {
+        margin-left: 15px;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #111;
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+    }
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        padding: 20px;
+    }
+    .nav div.media_button {
+        display: block;
+    }
+}
+
+
+/* Animation */
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+}
+
+.navTrigger i {
+    background-color: #fff;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+.affix {
+    padding: 0;
+    background-color: #201f23;
+}
+.myH2 {
+	text-align:center;
+	font-size: 4rem;
+}
+.myP {
+	text-align: justify;
+	padding-left:15%;
+	padding-right:15%;
+	font-size: 20px;
+}
+@media all and (max-width:700px){
+	.myP {
+		padding:2%;
+	}
+}
+
+:root{
+    --card-height:240px;
+    --card-width:calc(var(--card-height)/1.5);
+  }
+  *{
+    box-sizing: border-box;
+  }
+  .card{
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 20px;
+    perspective: 2500px;
+    margin: 0 50px;
+  }
+  .cover-image{
+    aspect-ratio: 2/3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .wrapper{
+    transition: all 0.5s;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+  .card:hover .wrapper{
+    transform: perspective(900px) translateY(-5%) rotateX(10deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow:2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  }
+  .wrapper::before,
+  .wrapper::after{
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 80px;
+    transition: all 0.5s;
+    position: absolute;
+    left:0;
+  }
+  .wrapper::before{
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient(
+      to top,image(),
+      transparent 40%,
+      rgba(12, 13, 19, 0.5) 68%,
+      rgba(12, 13, 19)97%
+      );
+  }
+  .wrapper::after{
+    bottom: 0;
+    opacity: 1;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 46%,
+      rgba(12,13,19,0.5) 68%,
+      rgba(12,13,19) 97%
+      );
+  }
+  .card:hover .wrapper::before,
+  .wrapper::after{
+    opacity: 1;
+
+  }
+  .card:hover .wrapper::after{
+    height: 120px;
+  }
+  .title{
+    width: 120%;
+    transition: transform 0.5s;
+  }
+  .card:hover .title{
+    transform: translate3d(0%, -40px, 100px);
+
+  }
+  .character{
+    width: 100%;
+    opacity: 0;
+    transition: all 0.6s;
+    position: absolute;
+    z-index: -1;
+  }
+  .card:hover .character{
+    opacity: 1;
+    transform: translate3d(0%, -30%, 100px);
+
+
+  }
+  .id{
+    width: 110%;
+    opacity: 0;
+    transition: all 0.6s;
+    position: absolute;
+    z-index: -1;
+  }
+  .card:hover .id{
+    opacity: 1;
+    transform: translate3d(0%, -30%, 100px);
+  }
+.go{
+    width: 170%;
+    opacity: 0;
+    transition: all 0.6s;
+    position: absolute;
+    z-index: -1;
+}
+.card:hover .go{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+}
+
+    .thanos{
+            width: 90%;
+            opacity: 0;
+            transition: all 0.6s;
+            position: absolute;
+            z-index: -1;}
+    .card:hover .thanos{
+                opacity: 1;
+                transform: translate3d(0%, -30%, 100px);
+    }
+    .shangchi{
+        width: 220%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover .shangchi{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    .Aven1{
+        width: 140%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover .Aven1{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+
+    #wf{
+        width: 130%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover #wf{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #antq{
+        width: 80%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover #antq{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #antw{
+        width: 100%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover #antw{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #cacw{
+        width: 120%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover #cacw{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #dstrange{
+        width: 110%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover #dstrange{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #tih{
+        width: 150%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover #tih{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #im1{
+        width: 120%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover #im1{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #thorag{
+        width: 100%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover #thorag{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #cafa1{
+        width: 90%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover #cafa1{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #antman{
+        width: 140%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover #antman{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #gogal1{
+        width: 145%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover #gogal1{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #ironman3{
+        width: 100%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover #ironman3{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #caws{
+        width: 50%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover #caws{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #thordark{
+        width: 90%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover #thordark{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #avengeraoaltron{
+        width: 70%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover #avengeraoaltron{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #spaiderffh{
+        margin-bottom: -30px;
+        width: 150%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover #spaiderffh{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #thor1{
+        width: 165%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover #thor1{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #ironman2{
+        width: 100%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover #ironman2{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #infinity1{
+        width: 150%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #infinity1{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #spaidernwh{
+        width: 120%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #spaidernwh{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #blackpanther{
+        width: 150%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #blackpanther{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #spaiderhc{
+        width: 160%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #spaiderhc{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #doctormom{
+        width: 130%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #doctormom{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #blackwidow{
+        width: 70%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #blackwidow{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #eternals{
+        width: 100%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #eternals{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #capmarvel{
+        width: 130%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #capmarvel{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #thorlot{
+        width: 150%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #thorlot{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #gogv3{
+        width: 140%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #gogv3{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #spiderman1{
+        width: 110%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #spiderman1{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #spiderman2{
+        width: 160%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #spiderman2{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #spiderman3{
+        width: 150%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #spiderman3{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #spiderasm{
+        width: 130%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #spiderasm{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #spiderasm2{
+        width: 90%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #spiderasm2{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+
+    #spaiderisv1{
+        width: 140%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #spaiderisv1{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #venom1{
+        width: 120%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #venom1{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #venom2{
+        width: 140%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #venom2{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #morbius{
+        width: 110%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #morbius{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #loki{
+        height: 80%;
+        width: 190%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #loki{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #won{
+
+        width: 140%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #won{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #fawinter{
+        width: 190%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #fawinter{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #whatif{
+        width: 140%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #whatif{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #wandav{
+        width: 120%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #wandav{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #hawkye{
+        width: 100%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #hawkye{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #shehulk{
+        width: 80%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #shehulk{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #msmarvel{
+        width: 130%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #msmarvel{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #goghs{
+        width: 90%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #goghs{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #inhumans{
+        width: 160%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #inhumans{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #punisher{
+        width: 90%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+    .card:hover #punisher{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #daredevil{
+        width: 90%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #daredevil{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #ironfist{
+        width: 170%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #ironfist{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #defenders{
+        width: 110%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #defenders{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #jessicaj{
+        width: 140%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #jessicaj{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #lukecage{
+        width: 80%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #lukecage{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #wolvorin{
+        width: 120%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #wolvorin{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #darkp{
+        width: 120%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #darkp{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #ghostr{
+        width: 120%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #ghostr{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #dead2{
+        width: 90%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #dead2{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #logan{
+        width: 90%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #logan{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #ghostr2{
+        width: 110%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #ghostr2{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #xmenap{
+        width: 130%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #xmenap{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+    #fan4{
+        width: 110%;
+        opacity: 0;
+        transition: all 0.6s;
+        position: absolute;
+        z-index: -1;}
+
+    .card:hover #fan4{
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+    }
+
+
+
+  a{
+    text-decoration: none;
+  }
+.po{
+    display: flex;
+    flex-direction:row;
+    float: left;
+    padding: 2;
+    margin-top: 1.5%;
+    margin-left: -1.2%;
+    margin-right: -2%;
+}
+.pic1{
+    border: 2px white solid;
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    background-size: 100% 100%;
+    z-index: 1;
+
+}
+.nav{
+    position: sticky;
+    top: 0;
+}
+
+#vedio{  margin-top: 0px;
+    display: flex;
+    object-fit:fill ;
+    border: 2px white solid;
+    max-width: 100%;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+.h2{
+    color: white;
+    font-size: 2em;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-left: 33px;
+}
+.divrow{
+    position: relative;
+    display:block;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  text-decoration: none;
+}
+footer{
+  width: 100%;
+  position:relatives;
+  bottom: 0;
+  bottom: 0;
+  left: 0;
+  background: #111;
+}
+footer .content{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .content p,a{
+  color: #fff;
+}
+footer .content .box{
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .content .topic{
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+}
+footer .content p{
+  text-align: justify;
+}
+footer .content .lower .topic{
+  margin: 24px 0 5px 0;
+}
+footer .content .lower i{
+  padding-right: 16px;
+}
+footer .content .middle{
+  padding-left: 80px;
+}
+footer .content .middle a{
+  line-height: 32px;
+}
+footer .content .right input[type="text"]{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+footer .content .right input[type="submit"]{
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #d9d9d9;
+  background: #eb2f06;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #eb2f06;
+  transition: all 0.3s ease-in-out;
+}
+.content .right input[type="submit"]:hover{
+  background: none;
+  color:  #eb2f06;
+}
+footer .content .media-icons a{
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+.content .media-icons a:hover{
+  border-color: #eb2f06;
+}
+footer .bottom{
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+}
+footer .bottom a{
+  color: #eb2f06;
+}
+footer a{
+  transition: all 0.3s ease;
+}
+footer a:hover{
+  color: #eb2f06;
+}
+@media (max-width:1100px) {
+  footer .content .middle{
+    padding-left: 50px;
+  }
+}
+@media (max-width:950px){
+  footer .content .box{
+    width: 50%;
+  }
+  .content .right{
+    margin-top: 40px;
+  }
+}
+@media (max-width:560px){
+  footer{
+    position: relative;
+  }
+  footer .content .box{
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content .middle{
+    padding-left: 0;
+  }
+}
+
+
+
+
+#box1{  z-index: 100;
+    height: 550px;
+    width: 43800%;
+    position: relative;
+    right: 707px;
+    bottom: 20px;
+    border: 2px solid transparent;
+}

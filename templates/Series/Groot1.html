@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="{%static 'images/marlogo.png'%}"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Am Groot</title>
+    <link rel="stylesheet" href="{%static 'MSeries/Groot1.css'%}">
+    <style>
+      .pic1{
+          background-image:url("{%static 'images/Groot1.jpg'%}");
+
+      }
+  </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="/nav">MARVEL</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="/nav" >Home</a></li>
+                    <li><a href="/marvelmovies">Movies</a></li>
+                    <li><a href="/series">Web-Series</a></li>
+                    <li><a href="/phase">Phases</a></li>
+                    <li><a href="/demo">Characters</a></li>
+                    <li><a href="/accounts/logout">Logout</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <div class="pic1">
+      <div  class="pic">
+          <video id="vedio" autoplay muted loop height="500px" width="1900px" onload="onloadfunc()">
+              <!--<source src="{%static 'video/intronav.mp4'%}" type="video/mp4">
+              <source id="w1" src="{%static 'video/intronav.mp4'%}" type="video/mp4">-->
+            </video>
+      </div>
+
+  </div>
+
+    <h2 class="h21">I Am Groot</h2>    
+      <div class="divrow"  style="height: 400px; margin-left: 300px;">
+        <div class="po">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/groot.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/groottitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/grootc.png'%}" alt="" class="character">
+            </div>
+          </div>
+      
+      <div class="po" style="margin-left: 40px;">
+        <table>
+          <tr id="tr">
+            <td id="td">Created by</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.google.com/search?q=kirsten+lepore&rlz=1C1CHBF_enIN986IN986&oq=Kirsten+Lepore&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyBwgBEC4YgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEC4YgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEC4YgAQyBwgIEAAYgAQyBwgJEC4YgATSAQcyNDhqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8">	Kirsten Lepore</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Based on</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.marvel.com/comics/discover/2299/ant-man-the-origin">Marvel Comics</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Produced by</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.imdb.com/name/nm0913655/">	Carrie Wassenaar</a></td>
+          </tr>	
+          <tr id="tr">
+            <td id="td">Production Company</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.marvel.com/movies">Marvel Studios</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Original Release </td>
+            <td id="td1">:</td>
+            <td id="td">August 10, 2022 –
+                present</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Running time</td>
+            <td id="td1">:</td>
+            <td id="td"> 5-6 Minutes</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">No. of Episodes</td>
+            <td id="td1">:</td>
+            <td id="td">5</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Genre</td>
+            <td id="td1">:</td>
+            <td id="td">Comedy, Family, Science fiction, Superhero</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Rating</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.imdb.com/title/tt13623148/">6.7/10 IMDb</a> | <a target="_blank" href="https://www.rottentomatoes.com/tv/i_am_groot/s01">88% Rotten Tomatoes</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+      <h2 class="h2">I Am Groot Official Trailer</h2>
+      <div class="divrow" style="height: 640px;">
+        <iframe id="iframe" width="1200" height="600" src="https://www.youtube.com/embed/D7eFpRf4tac" title="I Am Groot | Official Trailer | Disney+" frameborder="1px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
+      </div>
+
+      <!--Movie Cast-->
+      <h2 class="h2">Series Cast</h2>
+      <div class="divrow" style="height: 260px;">
+        <div class="po"><a target="_blank" title="Vin Diesel" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=754&q=Vin+Diesel&stick=H4sIAAAAAAAAAONgFuLWz9U3MDRMzsrOSlfiBHGMTPOMC7SEspOt9NMyc3LBhFVyYnHJIlausMw8BZfM1OLUnAlsjADn1AuyPgAAAA&lei=6pi1ZKH4KtTK2roPisGAmA4">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="data:image/jpeg;base64,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" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Vin <br> Diesel</h2></div>
+            </div></a> 
+        </div>
+        <div class="po"><a target="_blank" title="Bradley Cooper" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=754&q=Bradley+Cooper&stick=H4sIAAAAAAAAAONgFuLWz9U3MDRMzsrOSlfiBHPiK0oqtISyk6300zJzcsGEVXJicckiVj6nosSUnNRKBef8_ILUoglsjACgjYjfQgAAAA&lei=GJu1ZKGgC-bs2roPi9S8kAI">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="data:image/jpeg;base64,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" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Bradley Cooper</h2></div>
+            </div></a> 
+        </div>
+        
+      </div>
+
+      <!--Overview-->
+      <h2 class="h2">I Am Groot Overview</h2>
+      <div class="divrow" style="height: 60px;">
+        <div class="po" style="margin-right: 40px; margin-left: 33px;padding: 0px 20px 20px 20px;">
+          <p id="para">There’s no guarding the galaxy from this mischievous toddler! Get ready as Baby Groot takes center stage in his very own collection of shorts, exploring his glory days growing up—and getting into trouble—among the stars.
+
+        </p>
+        </div>
+      </div>
+
+      <h2 class="h2">Characters</h2>
+      <div class="divrow" style="height: 370px;">
+        <div class="po1"><a href="https://www.marvel.com/characters/groot/on-screen">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/Guardians_of_Galaxy2_Groot.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Groot</h2></div>
+            </div></a> 
+        </div>
+      </div>
+
+
+      <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">MarvelInfo is a web-page where you can find all the information regarding Marvel Movies, Series and Characters</p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+              </div>
+              <div class="email">
+                <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-envelope"></i>marvelinfo379@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Categories</div>
+            <div><a href="/nav" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Home</a></div>
+            <div><a href="/marvelmovies"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Movies</a></div>
+            <div><a href="/series"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Web-Series</a></div>
+            <div><a href="/phase"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Phases</a></div>
+            <div><a href="/demo"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Characters</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">
+              <img style="height: 100px;width: 500px;margin-top: 20px;" src="{%static 'images/MarvelStudio.png'%}" alt="">
+              <img style="height: 80px;width: 200px;margin-left: 160px;margin-top: 20px;" src="{%static 'images/MarvelLogo.png'%}" alt="">
+              
+            </div>
+            <!--
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+  
+            
+             <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter icon"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>-->
+          </div>
+        </div>
+        <div class="bottom">
+          <p></p>
+        </div>
+      </footer>
+  
+
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+       /* $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+});
+*/
+let docTitle=document.title;
+window.addEventListener('blur',()=>{
+  document.title='Bhai aaja Vapis';
+});
+window.addEventListener('focus',()=>{
+  document.title=docTitle;
+});
+
+</script>
+
+<script>
+  /*function My_Video() {
+            document.getElementById("w1").src =
+               "{%static 'video/intronav2.mp4'%}";
+            document.getElementById("vedio").load();
+        }
+        window.onload=My_Video()*/
+        
+</script>
+</body>
+</html>

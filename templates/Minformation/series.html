@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="{%static 'images/marlogo.png'%}"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Series</title>
+    <link rel="stylesheet" href="{%static 'css/nav.css'%}">
+    <style>
+       .pic1{
+            background-image:url("{%static 'images/series.png'%}");
+
+        }
+
+
+               /* RESET CSS */
+
+
+/* CAROUSEL CSS */
+.carousel {position: relative;}
+
+
+#divde{
+  padding-left: 30px;
+  padding-right: 55px;
+  padding-top: 20px;
+}
+
+.carousel::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: inset 0px 0px 120px 30px rgba(0,0,0,0.35);
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.carousel ul {
+  overflow: auto; 
+  display: flex; 
+  height: 60vw;
+  max-height: 600px;
+  scroll-snap-type: x mandatory;
+  scroll-snap-points-y: repeat(100%);
+  scroll-behavior: smooth;
+  background: gray;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  width: 100%;
+}
+.carousel ul::-webkit-scrollbar {display: none; /* Hide scrollbar for Chrome, Safari and Opera */} 
+.carousel ul li {
+  width: 100%;
+  min-width: 100%; 
+  list-style: none; 
+  background: url("{%static 'images/AvengerTeamCaru.jpg'%}") center center / cover no-repeat; 
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.carousel ul li div {z-index: 9;}
+.carousel ul li div a {color: white; display: inline-block; background: white; text-shadow: none; color: black; padding: 5px 15px; font-size: 18px; text-decoration: none; border-radius: 4px; margin-top: 10px;}
+.carousel ol {position: absolute; bottom: 15px; display: flex; justify-content: center; left: 50%; transform: translateX(-50%); z-index: 9;}
+.carousel ol li {list-style: none; padding: 0 5px;}
+.carousel ol li a {display: block; height: 10px; width: 10px; border: 2px solid white; background: transparent; border-radius: 100%;}
+.carousel ol li.selected a {background: white;}
+.carousel .prev, .carousel .next {user-select:none; cursor: pointer; font-size: 50px; color: white; position: absolute; left: 0; padding: 15px; top: 50%; transform: translateY(-50%); z-index: 9;}
+.carousel .next {left: auto; right: 0;}
+
+/* RESPONSIVE CSS */
+@media only screen and (max-width: 600px) {
+  .carousel ul li div {display: none;}
+}
+
+/* DEMO CSS */
+.carousel ul li:nth-child(2) {background-image:url("{%static 'images/guardianscaru.jpg'%}");}
+.carousel ul li:nth-child(3) {background-image:url("{%static 'images/ThorTeamCaru.jpg'%}");}
+.carousel ul li:nth-child(4) {background-image: url("{%static 'images/EternalsTeamCaru.jpg'%}");}
+.carousel ul li:nth-child(5) {background-image: url("{%static 'images/TunderboltsTeamCaru.jpg'%}");}
+.carousel ul li:nth-child(6) {background-image: url("{%static 'images/MidnightsonsTeamCaru.jpeg'%}");}
+.carousel ul li:nth-child(7) {background-image: url("{%static 'images/GuardiansofMulTeamCaru.jpeg'%}");}
+.carousel ul li:nth-child(8) {background-image: url("{%static 'images/xmenTeamCaru.jpg'%}");}
+.carousel ul li:nth-child(9) {background-image: url("{%static 'images/f4TeamCaru.jpg'%}");}
+.carousel ul li:nth-child(10) {background-image: url("{%static 'images/TheHowlingTeamCaru.jpg'%}");}
+.carousel ul li:nth-child(11) {background-image: url("{%static 'images/illuminatiTeamCaru.jpg'%}");}
+.carousel ul li:nth-child(12) {background-image: url("{%static 'images/BlackOrderTeamCaru.jpg'%}");}
+.carousel ul li:nth-child(13) {background-image: url("{%static 'images/defendersTeamCaru.jpg'%}");}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="/nav">MARVEL</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="/nav" >Home</a></li>
+                    <li><a href="/marvelmovies">Movies</a></li>
+                    <li><a href="/webseries">Web-Series</a></li>
+                    <li><a href="/phase">Phases</a></li>
+                    <li><a href="/demo">Characters</a></li>
+                    <li><a href="/accounts/logout">Logout</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    
+    <div class="pic1">
+        <div  class="pic">
+           <video id="vedio" autoplay muted loop height="500px" width="1900px" onload="onloadfunc()">
+                <!-- <source src="{%static 'video/intronav2.mp4'%}" type="video/mp4">
+                <source id="w1" src="{%static 'video/intronav.mp4'%}" type="video/mp4">-->
+              </video>
+        </div>
+
+    </div>
+
+    <h2 class="h2">Marvel Web-Series</h2>
+    <div class="divrow" style="height: 530px;">
+      <div class="po"><a href="/MoonKnight">
+        <div class="card">
+            <div class="wrapper">
+              <img src="{%static 'images/moon.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/moontitle.png'%}" alt="" class="title">
+            <img src="https://static.wikia.nocookie.net/vsbattles/images/f/fb/Moon_knight.png/revision/latest?cb=20220401235634" alt="" class="character">
+          </div></a>
+      </div>
+      <div class="po"><a href="/Groot1">
+        <div class="card">
+            <div class="wrapper">
+              <img src="{%static 'images/groot.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/groottitle.png'%}" alt="" class="title">
+            <img src="{%static 'images/grootc.png'%}" alt="" class="character">
+        </div></a>
+      </div>
+      <div class="po"><a href="/Loki1">
+        <div class="card">
+            <div class="wrapper">
+              <img src="{%static 'images/loki1.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/lokititle.png'%}" alt="" class="title">
+            <img src="{%static 'images/lokic.png'%}" alt="" id="loki">
+        </div></a>
+      </div>
+      
+      <div class="po"><a href="/FalconWinter">
+        <div class="card">
+            <div class="wrapper">
+              <img src="{%static 'images/falconwinter.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/fawintertitle.png'%}" alt="" class="title">
+            <img src="{%static 'images/fawinterc.png'%}" alt="" id="fawinter">
+        </div></a>
+      </div>
+     
+      <div class="po"><a href="/WandaVision">
+        <div class="card">
+            <div class="wrapper">
+              <img src="{%static 'images/wandav.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/wandavtitle.png'%}" alt="" class="title">
+            <img src="{%static 'images/wandavc.png'%}" alt="" id="wandav">
+        </div></a>
+      </div>
+      <div class="po"><a href="/Hawkye">
+        <div class="card">
+            <div class="wrapper">
+              <img src="{%static 'images/hawkye.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/hawkyetitle.png'%}" alt="" class="title">
+            <img src="{%static 'images/hawkyec.png'%}" alt="" id="hawkye">
+        </div></a>
+      </div>
+      <div class="po"><a href="/SheHulk">
+        <div class="card">
+            <div class="wrapper">
+              <img src="{%static 'images/shehulk.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/shehulktitle.png'%}" alt="" class="title">
+            <img src="{%static 'images/shehulkc.png'%}" alt="" id="shehulk">
+        </div></a>
+      </div>
+      
+      <div class="po"><a href="/HolidaySpecial">
+        <div class="card">
+            <div class="wrapper">
+              <img src="{%static 'images/goghs.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/goghstitle.png'%}" alt="" class="title">
+            <img src="{%static 'images/goghsc.png'%}" alt=""  id="goghs">
+        </div></a>
+      </div>
+  
+  </div>
+  <h2 class="h2">Animated Web-Series</h2>
+  <div class="divrow" style="height: 290px;">
+    <div class="po"><a href="/WhatIf">
+      <div class="card">
+          <div class="wrapper">
+            <img src="{%static 'images/whatif.jpg'%}" class= "cover-image" alt="">
+          </div>
+          <img src="{%static 'images/whatiftitle.png'%}" alt="" class="title">
+          <img src="{%static 'images/whatifc.png'%}" alt="" id="whatif">
+      </div></a>
+    </div>
+    </div>
+
+
+
+    <footer>
+      <div class="content">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic">About us</div>
+            <p style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">MarvelInfo is a web-page where you can find all the information regarding Marvel Movies, Series and Characters</p>
+          </div>
+          <div class="lower">
+            <div class="topic">Contact us</div>
+            <div class="phone">
+              <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+            </div>
+            <div class="email">
+              <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-envelope"></i>marvelinfo379@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="middle box">
+          <div class="topic">Categories</div>
+          <div><a href="/nav" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Home</a></div>
+          <div><a href="/marvelmovies"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Movies</a></div>
+          <div><a href="/series"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Web-Series</a></div>
+          <div><a href="/phase"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Phases</a></div>
+          <div><a href="/demo"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Characters</a></div>
+        </div>
+        <div class="right box">
+          <div class="topic">
+            <img style="height: 100px;width: 500px;margin-top: 20px;" src="{%static 'images/MarvelStudio.png'%}" alt="">
+            <img style="height: 80px;width: 200px;margin-left: 160px;margin-top: 20px;" src="{%static 'images/MarvelLogo.png'%}" alt="">
+            
+          </div>
+          <!--
+          <form action="#">
+            <input type="text" placeholder="Enter email address">
+            <input type="submit" name="" value="Send">
+
+          
+           <div class="media-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter icon"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </form>-->
+        </div>
+      </div>
+      <div class="bottom">
+        <p></p>
+      </div>
+    </footer>
+
+
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+       /* $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+});
+*/
+let docTitle=document.title;
+window.addEventListener('blur',()=>{
+  document.title='Bhai aaja Vapis';
+});
+window.addEventListener('focus',()=>{
+  document.title=docTitle;
+});
+
+</script>
+
+<script>
+  /*function My_Video() {
+            document.getElementById("w1").src =
+               "{%static 'video/intronav2.mp4'%}";
+            document.getElementById("vedio").load();
+        }
+        window.onload=My_Video()*/
+        
+</script>
+</body>
+</html>

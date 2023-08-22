@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="{%static 'images/marlogo.png'%}"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel-Cinematic-Universe:Phase Three</title>
+    <link rel="stylesheet" href="{%static 'css/phase3.css'%}">
+    <style>
+      .pic1{
+          background-image:url("{%static 'images/Phase3intro.jpg'%}");
+
+      }
+  </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="/nav">MARVEL</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="/nav" >Home</a></li>
+                    <li><a href="/marvelmovies">Movies</a></li>
+                    <li><a href="/series">Web-Series</a></li>
+                    <li><a href="/phase">Phases</a></li>
+                    <li><a href="/demo">Characters</a></li>
+                    <li><a href="/accounts/logout">Logout</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <div class="pic1">
+      <div  class="pic">
+          <video id="vedio" autoplay muted loop height="500px" width="1900px" onload="onloadfunc()">
+              <!--<source src="{%static 'video/intronav.mp4'%}" type="video/mp4">
+              <source id="w1" src="{%static 'video/intronav.mp4'%}" type="video/mp4">-->
+            </video>
+      </div>
+
+  </div>
+
+    <h2 class="h21">Marvel-Cinematic-Universe: Phase Three</h2>    
+      <div class="divrow"  style="height: 630px; margin-left: 30px;">
+        <div class="po"><a href="/CaptainAmericaCivilWar">
+          <div class="card">
+              <div class="wrapper">
+                <img src="{%static 'images/cacw.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <img src="{%static 'images/cacwtitle.png'%}" alt="" class="title">
+              <img src="{%static 'images/cacwc.png'%}" alt="" id="cacw">
+            </div></a>
+      </div>
+      <div class="po"><a href="/DoctorStrange1">
+          <div class="card">
+              <div class="wrapper">
+                <img src="{%static 'images/doctorstrange.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <img src="{%static 'images/dstrangetitle.png'%}" alt="" class="title">
+              <img src="{%static 'images/dstrangec.png'%}" alt="" id="dstrange">
+            </div></a>
+      </div>
+      <div class="po"><a href="/Guardians_of_Galaxy2">
+          <div class="card">
+              <div class="wrapper">
+                <img src="https://www.tubewp.com/wp-content/uploads/2023/05/hd-guardians-of-the-galaxy-wallpapers-2.jpg" class= "cover-image" alt="">
+              </div>
+              <img src="{%static 'images/gog2title.png'%}" alt="" class="title">
+              <img src="{%static 'images/gog2png.png'%}" alt="" class="go">
+            </div></a>
+      </div>
+      <div class="po"><a href="/SpidermanHomecoming">
+          <div class="card">
+              <div class="wrapper">
+                <img src="{%static 'images/spaiderhc.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <img src="{%static 'images/spaiderhctitle.png'%}"  alt="" class="title">
+              <img src="{%static 'images/spaiderhcc.png'%}" alt=""  id="spaiderhc">
+            </div></a>
+        </div>
+      <div class="po"><a href="/ThorRagnorok">
+          <div class="card">
+              <div class="wrapper">
+                <img src="https://wallpapercave.com/wp/wp2497232.jpg" class= "cover-image" alt="">
+              </div>
+              <img src="{%static 'images/thorragtitle.png'%}" alt="" class="title">
+              <img src="{%static 'images/thorragc.png'%}" alt="" id="thorag">
+            </div></a>
+      </div>
+      <div class="po"><a href="/BlackPanther1">
+          <div class="card">
+            <div class="wrapper">
+              <img src="https://images6.alphacoders.com/898/898734.jpg" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/blackpanthertitle.png'%}"  alt="" class="title">
+            <img src="{%static 'images/blackpantherc.png'%}" alt="" id="blackpanther">
+          </div></a>
+          </div>
+      <div class="po"><a href="/AvengersInfinityWar">
+          <div class="card">
+              <div class="wrapper">
+                <img src="{%static 'images/infinitywar.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <img src="{%static 'images/infinitytitle.png'%}"  alt="" class="title">
+              <img src="{%static 'images/thanosiwc.png'%}" alt=""  id="infinity1">
+            </div></a>
+      </div>
+      <div class="po"><a href="/Antman_and_Wasp">
+          <div class="card">
+              <div class="wrapper">
+                <img src="https://c4.wallpaperflare.com/wallpaper/759/82/331/ant-marvel-ant-man-ant-man-and-the-wasp-wallpaper-preview.jpg" class= "cover-image" alt="">
+              </div>
+              <img src="{%static 'images/antwpng.png'%}" alt="" class="title">
+              <img src="{%static 'images/antwch.png'%}" alt=""  id="antw">
+            </div></a>
+      </div>
+      
+      <div class="po"><a href="/AvengersEndGame">
+          <div class="card">
+              <div class="wrapper">
+                <img src="https://images8.alphacoders.com/100/thumb-1920-1003220.png" class= "cover-image" alt="">
+              </div>
+              <img src="{%static 'images/endpng.png'%}" alt="" class="title">
+              <img src="{%static 'images/thanos.png'%}" alt="" class="thanos">
+            </div></a>
+      </div>
+      <div class="po"><a href="/SpidermanFarFromHome">
+          <div class="card">
+              <div class="wrapper">
+                <img src="{%static 'images/spaiderffh.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <img src="{%static 'images/spaiderffhtitle.png'%}" style="margin-bottom: -40px;" alt="" class="title">
+              <img src="{%static 'images/spaiderffhc.png'%}" alt=""  id="spaiderffh">
+            </div></a>
+      </div>
+      </div>
+      
+      <h2 class="h2">Marvel-Cinematic-Universe: Phase Three Recap 1</h2>
+      <div class="divrow" style="height: 640px;">
+        <iframe id="iframe" width="1200" height="600" src="https://www.youtube.com/embed/A3tTJy_o-WU" title="The Marvel Cinematic Universe - Phase Three: Part 1 Retrospective [2016 - 2017]" frameborder="1px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+     
+     
+      <!--Overview-->
+      <h2 class="h2">Marvel-Cinematic-Universe:Phase Three Overview</h2>
+      <div class="divrow" style="height: 230px;">
+        <div class="po" style="margin-right: 40px; margin-left: 33px;padding: 20px 20px 20px 20px;">
+          <p id="para">Phase Three of the Marvel Cinematic Universe (MCU) is a series of American superhero films produced by Marvel Studios based on characters that appear in publications by Marvel Comics. The phase began in 2016 with the release of Captain America: Civil War and concluded in 2019 with the release of Spider-Man: Far From Home. It includes the crossover films Avengers: Infinity War, released in 2018, and its sequel Avengers: Endgame, released in 2019. Kevin Feige produced every film in the phase, alongside Amy Pascal for Spider-Man: Homecoming and Spider-Man: Far From Home, and Stephen Broussard for Ant-Man and the Wasp. The eleven films of the phase grossed over $13.5 billion at the global box office and received generally positive critical and public response. Upon release, Avengers: Endgame became the highest-grossing film of all time.[a]
+
+            Chris Evans and Tom Holland appeared the most in the phase, each starring or making cameo appearances in five of the Phase Three films. Marvel Studios also created three mockumentary short films centered on Thor, while each of the feature films received tie-in comic books. Phase Three, along with Phase One and Phase Two, make up The Infinity Saga. It was followed by Phase Four.</p>
+        </div>
+      </div>
+
+      <h2 class="h2">Characters</h2>
+      <div class="divrow" style="height: 2370px;">
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/iron-man-tony-stark/on-screen">
+          <div class="card1" id="card1" >
+              <div class="wrapper1" id="wrapper1">
+                <img src="{%static 'images/AvengersEndGameIronManCharacter.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <div class="wrapper2" id="wrapper2"><h2 class="heading2">Iron Man</h2></div>
+          </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/spider-man-peter-parker/on-screen">
+          <div class="card1" id="card1" >
+              <div class="wrapper1" id="wrapper1">
+                <img src="{%static 'images/AvengersEndGameSpaidermanCharacter.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <div class="wrapper2" id="wrapper2"><h2 class="heading2">Spider Man</h2></div>
+          </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/scarlet-witch-wanda-maximoff/on-screen">
+          <div class="card1" id="card1" >
+              <div class="wrapper1" id="wrapper1">
+                <img src="{%static 'images/AvengersEndGameWandaCharacter.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <div class="wrapper2" id="wrapper2"><h2 class="heading2">Scarlett Witch</h2></div>
+          </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/captain-america-steve-rogers/on-screen">
+          <div class="card1" id="card1" >
+              <div class="wrapper1" id="wrapper1">
+                <img src="{%static 'images/AvengersEndGameCaptainAmericaCharacter.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <div class="wrapper2" id="wrapper2"><h2 class="heading2">Captain America</h2></div>
+          </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/quicksilver-age-of-apocalypse">
+          <div class="card1" id="card1" >
+              <div class="wrapper1" id="wrapper1">
+                <img src="{%static 'images/AvengersAgeofUltronQuicksilver.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <div class="wrapper2" id="wrapper2"><h2 class="heading2">QuickSilver</h2></div>
+          </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/vision/on-screen">
+          <div class="card1" id="card1" >
+              <div class="wrapper1" id="wrapper1">
+                <img src="{%static 'images/AvengersAgeofUltronVision.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <div class="wrapper2" id="wrapper2"><h2 class="heading2">Vision</h2></div>
+          </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/hawkeye-clint-barton/on-screen">
+          <div class="card1" id="card1" >
+              <div class="wrapper1" id="wrapper1">
+                <img src="{%static 'images/AvengersEndGameHawkyeCharacter.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <div class="wrapper2" id="wrapper2"><h2 class="heading2">Hawkeye</h2></div>
+          </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/thor-thor-odinson/on-screen">
+          <div class="card1" id="card1" >
+              <div class="wrapper1" id="wrapper1">
+                <img src="{%static 'images/AvengersEndGameThorCharacter.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <div class="wrapper2" id="wrapper2"><h2 class="heading2">Thor</h2></div>
+          </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/black-widow-natasha-romanoff/on-screen">
+          <div class="card1" id="card1" >
+              <div class="wrapper1" id="wrapper1">
+                <img src="{%static 'images/AvengersEndGameBlackWidowCharacter.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <div class="wrapper2" id="wrapper2"><h2 class="heading2">Black Widow</h2></div>
+          </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/korg">
+          <div class="card1" id="card1" >
+              <div class="wrapper1" id="wrapper1">
+                <img src="{%static 'images/ThorRagnorokKorg.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <div class="wrapper2" id="wrapper2"><h2 class="heading2">Korg</h2></div>
+          </div></a> 
+      </div> 
+      <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/hela/on-screen">
+        <div class="card1" id="card1" >
+            <div class="wrapper1" id="wrapper1">
+              <img src="{%static 'images/ThorRagnorokHela.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <div class="wrapper2" id="wrapper2"><h2 class="heading2">Hela</h2></div>
+        </div></a> 
+    </div> 
+    <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/surtur">
+      <div class="card1" id="card1" >
+          <div class="wrapper1" id="wrapper1">
+            <img src="{%static 'images/ThorRagnorokSartur.jpg'%}" class= "cover-image" alt="">
+          </div>
+          <div class="wrapper2" id="wrapper2"><h2 class="heading2">Surtur</h2></div>
+      </div></a> 
+  </div> 
+  <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/doctor-strange-stephen-strange/on-screen">
+    <div class="card1" id="card1" >
+        <div class="wrapper1" id="wrapper1">
+          <img src="{%static 'images/AvengersEndGameDrStrangeCharacter.jpg'%}" class= "cover-image" alt="">
+        </div>
+        <div class="wrapper2" id="wrapper2"><h2 class="heading2">Doctor Strange</h2></div>
+    </div></a> 
+  </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/sam-wilson/on-screen">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/AvengersEndGameFalconCharacter.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Falcon</h2></div>
+            </div></a> 
+          </div>
+          <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/wong/on-screen">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/AvengersEndGameWongCharacter.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Wong</h2></div>
+            </div></a> 
+          </div>
+          <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/winter-soldier-bucky-barnes/on-screen">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/AvengersEndGameBuckyCharacter.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Winter Soldier</h2></div>
+            </div></a> 
+          </div>
+          <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/nick-fury/on-screen">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/AvengersEndGameNickFuryCharacter.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Nick Fury</h2></div>
+            </div></a> 
+          </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/baron-zemo-helmut-zemo/on-screen">
+          <div class="card1" id="card1" >
+              <div class="wrapper1" id="wrapper1">
+                <img src="{%static 'images/CivilWarBaronZemo.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <div class="wrapper2" id="wrapper2"><h2 class="heading2">Baron Zemo</h2></div>
+          </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/thanos/on-screen">
+          <div class="card1" id="card1" >
+              <div class="wrapper1" id="wrapper1">
+                <img src="{%static 'images/AvengersEndGameThanosCharacter.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <div class="wrapper2" id="wrapper2"><h2 class="heading2">Thanos</h2></div>
+          </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/hulk-bruce-banner/on-screen">
+          <div class="card1" id="card1" >
+              <div class="wrapper1" id="wrapper1">
+                <img src="{%static 'images/AvengersEndGameHulkCharacter.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <div class="wrapper2" id="wrapper2"><h2 class="heading2">Hulk</h2></div>
+          </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/war-machine-james-rhodes/on-screen">
+          <div class="card1" id="card1" >
+              <div class="wrapper1" id="wrapper1">
+                <img src="{%static 'images/AvengersEndGameWarMachineCharacter.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <div class="wrapper2" id="wrapper2"><h2 class="heading2">War Machine</h2></div>
+          </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/loki/on-screen">
+          <div class="card1" id="card1" >
+              <div class="wrapper1" id="wrapper1">
+                <img src="{%static 'images/AvengersEndGameLokiCharacter.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <div class="wrapper2" id="wrapper2"><h2 class="heading2">Loki</h2></div>
+          </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/ant-man-scott-lang/on-screen">
+          <div class="card1" id="card1" >
+              <div class="wrapper1" id="wrapper1">
+                <img src="{%static 'images/Ant_Man_and_Wasp_antman_character.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <div class="wrapper2" id="wrapper2"><h2 class="heading2">Ant-Man</h2></div>
+          </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/hope-van-dyne/on-screen">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/Ant_Man_and_Wasp_wasp_character.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Wasp</h2></div>
+            </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/ghost">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/Ant_Man_and_Wasp_Ghost_character.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Ghost</h2></div>
+            </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/star-lord-peter-quill/on-screen">
+          <div class="card1" id="card1" >
+              <div class="wrapper1" id="wrapper1">
+                <img src="{%static 'images/Guardians_of_Galaxy2_StarLord.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <div class="wrapper2" id="wrapper2"><h2 class="heading2">Star Lord</h2></div>
+          </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/gamora/on-screen">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/Guardians_of_Galaxy2_SGamora.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Gamora</h2></div>
+            </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/drax/on-screen">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/Guardians_of_Galaxy2_Drax.png'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Drax</h2></div>
+            </div></a> 
+        </div>
+        <div class="po1"><a href="https://www.marvel.com/characters/groot/on-screen">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/Guardians_of_Galaxy2_Groot.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Groot</h2></div>
+            </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/rocket/on-screen">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/Guardians_of_Galaxy2_Rocket.jpeg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Rocket Racoon</h2></div>
+            </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/ego/on-screen">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/Guardians_of_Galaxy2_Ego.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Ego-The Living Planet</h2></div>
+            </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/mantis/on-screen">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/Guardians_of_Galaxy2_Mantis.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Mantis</h2></div>
+            </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/yondu/on-screen">
+          <div class="card1" id="card1" >
+              <div class="wrapper1" id="wrapper1">
+                <img src="{%static 'images/Guardians_of_Galaxy2_Yondu.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <div class="wrapper2" id="wrapper2"><h2 class="heading2">Youndu</h2></div>
+          </div></a> 
+      </div>
+      <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/nebula/on-screen">
+          <div class="card1" id="card1" >
+              <div class="wrapper1" id="wrapper1">
+                <img src="{%static 'images/Guardians_of_Galaxy2_Nebula.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <div class="wrapper2" id="wrapper2"><h2 class="heading2">Nebula</h2></div>
+          </div></a> 
+      </div>
+      <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/hank-pym/in-comics">
+        <div class="card1" id="card1" >
+            <div class="wrapper1" id="wrapper1">
+              <img src="{%static 'images/Ant_Man_and_Wasp_hangpym_character.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <div class="wrapper2" id="wrapper2"><h2 class="heading2">Hang Pym</h2></div>
+        </div></a> 
+    </div>
+    <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/wasp-janet-van-dyne">
+      <div class="card1" id="card1" >
+          <div class="wrapper1" id="wrapper1">
+            <img src="{%static 'images/Ant_Man_and_Wasp_janet_character.jpg'%}" class= "cover-image" alt="">
+          </div>
+          <div class="wrapper2" id="wrapper2"><h2 class="heading2">Janet Van Dyne</h2></div>
+      </div></a> 
+    </div>
+    <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/black-panther-t-challa/on-screen">
+      <div class="card1" id="card1" >
+          <div class="wrapper1" id="wrapper1">
+            <img src="{%static 'images/BlackPantherWakandaForeverBlackPantherCharacter.jpg'%}" class= "cover-image" alt="">
+          </div>
+          <div class="wrapper2" id="wrapper2"><h2 class="heading2">Black Panther</h2></div>
+      </div></a> 
+    </div>
+    <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/erik-killmonger/on-screen">
+      <div class="card1" id="card1" >
+          <div class="wrapper1"id="wrapper1" >
+            <img src="{%static 'images/BlackPantherWakandaForeverEricKillmongerCharacter.jpg'%}" class= "cover-image" alt="">
+          </div>
+          <div class="wrapper2" id="wrapper2"><h2 class="heading2">Eric Killmonger</h2></div>
+      </div></a> 
+    </div>
+    <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/shuri/on-screen">
+      <div class="card1" id="card1" >
+          <div class="wrapper1" id="wrapper1">
+            <img src="data:image/jpeg;base64,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" class= "cover-image" alt="">
+          </div>
+          <div class="wrapper2" id="wrapper2"><h2 class="heading2" style="margin-bottom: 198px;">Shuri</h2></div>
+      </div></a> 
+    </div>
+    <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/m-baku/in-comics">
+      <div class="card1" id="card1" >
+          <div class="wrapper1" id="wrapper1">
+            <img src="{%static 'images/BlackPantherWakandaForeverEMbakuCharacter.jpg'%}" class= "cover-image" alt="">
+          </div>
+          <div class="wrapper2" id="wrapper2"><h2 class="heading2" style="margin-bottom: 198px;">M'Baku</h2></div>
+      </div></a> 
+    </div>
+    <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/okoye/on-screen">
+      <div class="card1" id="card1" >
+          <div class="wrapper1" id="wrapper1">
+            <img src="{%static 'images/BlackPantherWakandaForeverOkoyeCharacter.jpg'%}" class= "cover-image" alt="">
+          </div>
+          <div class="wrapper2" id="wrapper2"><h2 class="heading2" style="margin-bottom: 198px;">Okoye</h2></div>
+      </div></a> 
+    </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/queen-ramonda/in-comics">
+          <div class="card1" id="card1" >
+              <div class="wrapper1" id="wrapper1">
+                <img src="{%static 'images/BlackPantherWakandaForeverQueenRamondaCharacter.jpeg'%}" class= "cover-image" alt="">
+              </div>
+              <div class="wrapper2" id="wrapper2"><h2 class="heading2" style="margin-bottom: 198px;">Queen Ramonda</h2></div>
+          </div></a> 
+        </div>
+      </div>
+
+
+      <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">MarvelInfo is a web-page where you can find all the information regarding Marvel Movies, Series and Characters</p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+              </div>
+              <div class="email">
+                <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-envelope"></i>marvelinfo379@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Categories</div>
+            <div><a href="/nav" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Home</a></div>
+            <div><a href="/marvelmovies"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Movies</a></div>
+            <div><a href="/series"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Web-Series</a></div>
+            <div><a href="/phase"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Phases</a></div>
+            <div><a href="/demo"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Characters</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">
+              <img style="height: 100px;width: 500px;margin-top: 20px;" src="{%static 'images/MarvelStudio.png'%}" alt="">
+              <img style="height: 80px;width: 200px;margin-left: 160px;margin-top: 20px;" src="{%static 'images/MarvelLogo.png'%}" alt="">
+              
+            </div>
+            <!--
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+  
+            
+             <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter icon"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>-->
+          </div>
+        </div>
+        <div class="bottom">
+          <p></p>
+        </div>
+      </footer>
+  
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+       /* $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+});
+*/
+let docTitle=document.title;
+window.addEventListener('blur',()=>{
+  document.title='Bhai aaja Vapis';
+});
+window.addEventListener('focus',()=>{
+  document.title=docTitle;
+});
+
+</script>
+
+<script>
+  /*function My_Video() {
+            document.getElementById("w1").src =
+               "{%static 'video/intronav2.mp4'%}";
+            document.getElementById("vedio").load();
+        }
+        window.onload=My_Video()*/
+        
+</script>
+</body>
+</html>

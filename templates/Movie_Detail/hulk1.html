@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="{%static 'images/marlogo.png'%}"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Incredible Hulk</title>
+    <link rel="stylesheet" href="{%static 'MovieCss/Hulk1.css'%}">
+    <style>
+      .pic1{
+          background-image:url("{%static 'images/Hulk1intro.png'%}");
+
+      }
+  </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="/nav">MARVEL</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="/nav" >Home</a></li>
+                    <li><a href="/marvelmovies">Movies</a></li>
+                    <li><a href="/series">Web-Series</a></li>
+                    <li><a href="/phase">Phases</a></li>
+                    <li><a href="/demo">Characters</a></li>
+                    <li><a href="/accounts/logout">Logout</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <div class="pic1">
+      <div  class="pic">
+          <video id="vedio" autoplay muted loop height="500px" width="1900px" onload="onloadfunc()">
+              <!--<source src="{%static 'video/intronav.mp4'%}" type="video/mp4">
+              <source id="w1" src="{%static 'video/intronav.mp4'%}" type="video/mp4">-->
+            </video>
+      </div>
+
+  </div>
+
+    <h2 class="h21">The Incredible Hulk</h2>    
+      <div class="divrow"  style="height: 400px; margin-left: 300px;">
+        <div class="po">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/tih.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/tihtitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/tihc.png'%}" alt="" id="tih">
+              </div>
+        </div>
+      
+      <div class="po" style="margin-left: 40px;">
+        <table>
+          <tr id="tr">
+            <td id="td">Directed by</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.google.com/search?q=louis+leterrier&rlz=1C1CHBF_enIN986IN986&oq=Louis+Leterrier&gs_lcrp=EgZjaHJvbWUqDwgAEAAYQxjjAhixAxiKBTIPCAAQABhDGOMCGLEDGIoFMgwIARAuGEMYsQMYigUyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEC4YgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQgxMDE4ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8">Louis Leterrier</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Based on</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://en.wikipedia.org/wiki/The_Incredible_Hulk_(comic_book)">	
+              Hulk
+              by Stan Lee,
+              Jack Kirby</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Produced by</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.google.com/search?q=kevin+feige&rlz=1C1CHBF_enIN986IN986&oq=Kevin+Feige&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYsQMYgAQyDQgAEAAY4wIYsQMYgAQyCggBEC4YsQMYgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQcyODhqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8">Kevin Feige</a></td>
+          </tr>	
+          <tr id="tr">
+            <td id="td"></td>
+            <td id="td1"></td>
+            <td id="td"><a target="_blank" href="">Avi Arad</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td"></td>
+            <td id="td1"></td>
+            <td id="td"><a target="_blank" href="">Gale Anne Hurd</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Production Company</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.marvel.com/movies">Marvel Studios</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Release Date</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.google.com/search?q=the+incredible+hulk+release+date&rlz=1C1CHBF_enIN986IN986&ei=DaW-ZOqHKeHm2roPo7WN0AM&oq=the+incredible+hulk+re&gs_lp=Egxnd3Mtd2l6LXNlcnAiFnRoZSBpbmNyZWRpYmxlIGh1bGsgcmUqAggBMgUQLhiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEiUGFBHWJ8GcAF4AZABAJgBhgGgAekCqgEDMC4zuAEByAEA-AEBwgIKEAAYRxjWBBiwA8ICChAAGIoFGLADGEPCAg4QABjkAhjWBBiwA9gBAcICEBAuGIoFGMgDGLADGEPYAQLCAgcQABiKBRhDwgIHEC4YigUYQ8ICFBAuGIAEGJcFGNwEGN4EGOAE2AED4gMEGAAgQYgGAZAGE7oGBggBEAEYCboGBggCEAEYCLoGBggDEAEYFA&sclient=gws-wiz-serp">June 13, 2008</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Running time</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.google.com/search?q=the+incredible+hulk+runtime&rlz=1C1CHBF_enIN986IN986&ei=EqW-ZOrJAu6y2roPjeiMuAk&oq=the+incredible+hulk+run&gs_lp=Egxnd3Mtd2l6LXNlcnAiF3RoZSBpbmNyZWRpYmxlIGh1bGsgcnVuKgIIADIKEAAYgAQYRhj7ATIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCBAAGIoFGIYDMggQABiKBRiGAzIIEAAYigUYhgMyCBAAGIoFGIYDSLYVUIEFWOAGcAF4AZABAJgB5wGgAeYCqgEFMC4xLjG4AQHIAQD4AQHCAgoQABhHGNYEGLADwgIKEAAYigUYsAMYQ8ICDhAAGOQCGNYEGLAD2AEBwgIQEC4YigUYyAMYsAMYQ9gBAsICFhAuGIoFGMcBGNEDGMgDGLADGEPYAQLCAgUQLhiABMICCBAAGBYYHhgK4gMEGAAgQYgGAZAGE7oGBggBEAEYCboGBggCEAEYCA&sclient=gws-wiz-serp">1 Hour 52 Minutes</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Budget	</td>
+            <td id="td1">:</td>
+            <td id="td">$137.5–150 million</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Box office</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.google.com/search?q=the+incredible+hulk+box+office+collection&rlz=1C1CHBF_enIN986IN986&ei=OqW-ZLjcHeWu2roP8e6luAM&oq=the+incredible+hulk++box&gs_lp=Egxnd3Mtd2l6LXNlcnAiGHRoZSBpbmNyZWRpYmxlIGh1bGsgIGJveCoCCAAyChAAGIAEGEYY-wEyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgsQABgWGB4YDxjxBDIIEAAYFhgeGA8yCBAAGBYYHhgPSOkdUNsGWLoPcAF4AZABAJgB4AGgAdAEqgEFMC4zLjG4AQHIAQD4AQHCAgoQABhHGNYEGLADwgIKEAAYigUYsAMYQ8ICChAuGIoFGLADGEPCAgcQABiKBRhDwgIHEC4YigUYQ8ICBRAuGIAEwgILEAAYgAQYsQMYgwHCAggQLhiABBjUAsICCBAAGIoFGIYD4gMEGAAgQYgGAZAGCg&sclient=gws-wiz-serp">$264.8 million</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Rating</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.imdb.com/title/tt0800080/">6.6/10 IMDb</a> | <a target="_blank" href="https://www.rottentomatoes.com/m/the_incredible_hulk">67% Rotten Tomatoes</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+      <h2 class="h2">The Incredible Hulk Official Trailer</h2>
+      <div class="divrow" style="height: 640px;">
+        <iframe id="iframe" width="1200" height="600" src="https://www.youtube.com/embed/xbqNb2PFKKA" title="The Incredible Hulk (2008) Official Trailer - Edward Norton, Liv Tyler Movie HD" frameborder="1px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+
+      <!--Movie Cast-->
+      <h2 class="h2">Movie Cast</h2>
+      <div class="divrow" style="height: 260px;">
+        <div class="po"><a target="_blank" title="Edward Norton" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&hl=en&q=Edward+Norton&stick=H4sIAAAAAAAAAONgFuLUz9U3SMnLzi1UAjMNTQ1Ny7WEspOt9NMyc3LBhFVyYnHJIlZe15TyxKIUBb_8opL8vB2sjACgKdGZPwAAAA&ved=2ahUKEwilnZX13qeAAxWjgVYBHTkIDZgQgOQBegQIRRAE&biw=1536&bih=754&dpr=1.25">
+          <div class="card1">
+              <div class="wrapper1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Ed_Norton_Shankbone_Metropolitan_Opera_2009.jpg/1200px-Ed_Norton_Shankbone_Metropolitan_Opera_2009.jpg" class= "cover-image1" alt="">
+              </div>
+              <div class="wrapper2"><h2 class="heading1">Edward Norton</h2></div>
+            </div></a> 
+        </div>
+        <div class="po"><a target="_blank" title="Lou Ferrigno" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&hl=en&biw=1536&bih=754&q=Lou+Ferrigno&stick=H4sIAAAAAAAAAONgFuLUz9U3SMnLzi1U4gAxTQorLLWEspOt9NMyc3LBhFVyYnHJIlYen_xSBbfUoqLM9Lz8HayME9gYAZPFSNhAAAAA&lei=pKa-ZJqODb_W2roPkI2JMA">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lou_Ferrigno_2018.jpg/1200px-Lou_Ferrigno_2018.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Lou Ferrigno</h2></div>
+              </div></a> 
+          </div>
+          <div class="po"><a target="_blank" title="Tim Roth" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&hl=en&biw=1536&bih=754&q=Tim+Roth&stick=H4sIAAAAAAAAAONgFuLUz9U3SMnLzi1UAjONDCurirWEspOt9NMyc3LBhFVyYnHJIlaOkMxchaD8kowdrIwT2BgB8u346D0AAAA&lei=Ham-ZJvkNLKW2roPuN6FkA0">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Tim_Roth_Cannes_2015.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Tim <br> Roth</h2></div>
+              </div></a> 
+          </div>
+          <div class="po"><a target="_blank" title="Liv Tyler" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&hl=en&biw=1536&bih=754&q=Liv+Tyler&stick=H4sIAAAAAAAAAONgFuLUz9U3SMnLzi1UAjMNizIMyrWEspOt9NMyc3LBhFVyYnHJIlZOn8wyhZDKnNSiHayME9gYAYgGATI-AAAA&lei=IKm-ZM_ZG4Tk2roP1qyauAY">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://flxt.tmsimg.com/assets/39912_v9_bb.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Liv <br> Tyler</h2></div>
+              </div></a> 
+          </div> 
+          <div class="po"><a target="_blank" title="William Hurt" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&hl=en&biw=1536&bih=754&q=William+Hurt&stick=H4sIAAAAAAAAAONgFuLUz9U3SMnLzi1UAjMNzbIzUrSEspOt9NMyc3LBhFVyYnHJIlae8MycnMzEXAWP0qKSHayME9gYAbOiLrpBAAAA&lei=tam-ZIj0EKjt2roP1aSFwAM">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://imgnew.outlookindia.com/uploadimage/library/16_9/16_9_5/IMAGE_1647233551.webp" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">William Hurt</h2></div>
+              </div></a> 
+          </div> 
+          <div class="po"><a target="_blank" title="Tim Blake Nelson" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&hl=en&biw=1536&bih=754&q=Tim+Blake+Nelson&stick=H4sIAAAAAAAAAONgFuLUz9U3SMnLzi1U4gAxs1IyCrSEspOt9NMyc3LBhFVyYnHJIlaBkMxcBaecxOxUBb_UnOL8vB2sjBPYGAE21vAaRAAAAA&lei=xqm-ZI-RA7Ps2roP8IGRyA0">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://m.media-amazon.com/images/M/MV5BMTk0ODkwNjM5M15BMl5BanBnXkFtZTcwNzQ3NjgyMw@@._V1_FMjpg_UX1000_.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Tim Blake Nelson</h2></div>
+              </div></a> 
+          </div>     
+      </div>
+
+      <!--Overview-->
+      <h2 class="h2">The Incredible Hulk Overview</h2>
+      <div class="divrow" style="height: 150px;">
+        <div class="po" style="margin-right: 40px; margin-left: 33px;padding: 0px 20px 20px 20px;">
+          <p id="para">In this new beginning, scientist Bruce Banner desperately hunts for a cure to the gamma radiation that poisoned his cells and unleashes the unbridled force of rage within him: The Hulk. Living in the shadows--cut off from a life he knew and the woman he loves, Betty Ross--Banner struggles to avoid the obsessive pursuit of his nemesis, General Thunderbolt Ross and the military machinery that seeks to capture him and brutally exploit his power. As all three grapple with the secrets that led to the Hulk's creation, they are confronted with a monstrous new adversary known as the Abomination, whose destructive strength exceeds even the Hulk's own. One scientist must make an agonizing final choice: accept a peaceful life as Bruce Banner or find heroism in the creature he holds inside--The Incredible Hulk.</p>
+        </div>
+      </div>
+
+      <h2 class="h2">Characters</h2>
+      <div class="divrow" style="height: 370px;">
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/hulk-bruce-banner/on-screen">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/AvengersEndGameHulkCharacter.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Hulk</h2></div>
+            </div></a> 
+          </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/abomination">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/Hulk1Abomination.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Abomination</h2></div>
+            </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/leader-samuel-sterns">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/Hulk1Samuel Sterns.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Leader</h2></div>
+            </div></a> 
+        </div>
+      </div>
+
+
+      <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">MarvelInfo is a web-page where you can find all the information regarding Marvel Movies, Series and Characters</p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+              </div>
+              <div class="email">
+                <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-envelope"></i>marvelinfo379@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Categories</div>
+            <div><a href="/nav" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Home</a></div>
+            <div><a href="/marvelmovies"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Movies</a></div>
+            <div><a href="/series"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Web-Series</a></div>
+            <div><a href="/phase"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Phases</a></div>
+            <div><a href="/demo"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Characters</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">
+              <img style="height: 100px;width: 500px;margin-top: 20px;" src="{%static 'images/MarvelStudio.png'%}" alt="">
+              <img style="height: 80px;width: 200px;margin-left: 160px;margin-top: 20px;" src="{%static 'images/MarvelLogo.png'%}" alt="">
+              
+            </div>
+            <!--
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+  
+            
+             <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter icon"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>-->
+          </div>
+        </div>
+        <div class="bottom">
+          <p></p>
+        </div>
+      </footer>
+  
+
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+       /* $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+});
+*/
+let docTitle=document.title;
+window.addEventListener('blur',()=>{
+  document.title='Bhai aaja Vapis';
+});
+window.addEventListener('focus',()=>{
+  document.title=docTitle;
+});
+
+</script>
+
+<script>
+  /*function My_Video() {
+            document.getElementById("w1").src =
+               "{%static 'video/intronav2.mp4'%}";
+            document.getElementById("vedio").load();
+        }
+        window.onload=My_Video()*/
+        
+</script>
+</body>
+</html>

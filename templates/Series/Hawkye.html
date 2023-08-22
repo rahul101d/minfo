@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="{%static 'images/marlogo.png'%}"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hawkeye</title>
+    <link rel="stylesheet" href="{%static 'MSeries/Hawkye.css'%}">
+    <style>
+      .pic1{
+          background-image:url("{%static 'images/Hawkyeintro.jpg'%}");
+
+      }
+  </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="/nav">MARVEL</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="/nav" >Home</a></li>
+                    <li><a href="/marvelmovies">Movies</a></li>
+                    <li><a href="/series">Web-Series</a></li>
+                    <li><a href="/phase">Phases</a></li>
+                    <li><a href="/demo">Characters</a></li>
+                    <li><a href="/accounts/logout">Logout</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <div class="pic1">
+      <div  class="pic">
+          <video id="vedio" autoplay muted loop height="500px" width="1900px" onload="onloadfunc()">
+              <!--<source src="{%static 'video/intronav.mp4'%}" type="video/mp4">
+              <source id="w1" src="{%static 'video/intronav.mp4'%}" type="video/mp4">-->
+            </video>
+      </div>
+
+  </div>
+
+    <h2 class="h21">Hawkeye</h2>    
+      <div class="divrow"  style="height: 400px; margin-left: 300px;">
+        <div class="po">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/hawkye.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/hawkyetitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/hawkyec.png'%}" alt="" id="hawkye">
+            </div>
+          </div>
+      
+      <div class="po" style="margin-left: 40px;">
+        <table>
+          <tr id="tr">
+            <td id="td">Created by</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.google.com/search?q=jonathan+igla&rlz=1C1CHBF_enIN986IN986&oq=Jonathan+Igla&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyBwgBEC4YgATSAQcyNTlqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8">		Jonathan Igla</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Based on</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.marvel.com/comics/discover/2299/ant-man-the-origin">Marvel Comics</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Produced by</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.google.com/search?q=kevin+feige&rlz=1C1CHBF_enIN986IN986&oq=Kevin+Feige&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYsQMYgAQyDQgAEAAY4wIYsQMYgAQyCggBEC4YsQMYgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQcyODhqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8">Kevin Feige</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Production Company</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.marvel.com/movies">Marvel Studios</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Original Release </td>
+            <td id="td1">:</td>
+            <td id="td">	November 24 –
+                December 22, 2021</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Running time</td>
+            <td id="td1">:</td>
+            <td id="td"> 40-62 Minutes</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">No. of Episodes</td>
+            <td id="td1">:</td>
+            <td id="td">6</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Genre</td>
+            <td id="td1">:</td>
+            <td id="td">	
+                Action-adventure, 
+                Buddy comedy, 
+                Crime, 
+                Superhero</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Rating</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.imdb.com/title/tt10160804/">7.5/10 IMDb</a> | <a target="_blank" href="https://www.rottentomatoes.com/tv/hawkeye">92% Rotten Tomatoes</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+      <h2 class="h2">Hawkeye Official Trailer</h2>
+      <div class="divrow" style="height: 640px;">
+        <iframe id="iframe" width="1200" height="600" src="https://www.youtube.com/embed/5VYb3B1ETlk" title="Marvel Studios’ Hawkeye | Official Trailer | Disney+" frameborder="1px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      <!--Movie Cast-->
+      <h2 class="h2">Series Cast</h2>
+      <div class="divrow" style="height: 260px;">
+        <div class="po"><a target="_blank" title="Florence Pugh" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Florence+Pugh&stick=H4sIAAAAAAAAAONgFuLVT9c3NMwwM6xMKjGsVIJwkyrS4tPNCgy1hLKTrfTTMnNywYRVcmJxySJWXrec_KLUvORUhYDS9IwdrIwT2BgBbIutsUoAAAA&lei=O97EZJyoCryWseMP5rKs4As">
+            <div class="card1">
+              <div class="wrapper1">
+                <img src="https://cdn.britannica.com/20/217320-050-181C95DC/English-actor-Florence-Pugh-2019.jpg" class= "cover-image1" alt="">
+              </div>
+              <div class="wrapper2"><h2 class="heading1">Florence Pugh</h2></div>
+            </div></a> 
+        </div>
+        <div class="po"><a target="_blank" title="Scarlett Johansson" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=754&q=Scarlett+Johansson&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQyS7LILlPiBHGMDA1NSrSEspOt9NMyc3LBhFVyYnHJIlah4OTEopzUkhIFr_yMxLzi4vy8CWyMADpJqdRGAAAA&lei=H822ZPSrNd3f2roPkr-JmAI">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ8AeEexqcNq8S_Io8P4aANP308l2O0DnMRw&usqp=CAU" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Scarlett Johansson</h2></div>
+            </div></a> 
+        </div>
+        <div class="po"><a target="_blank" title="Jeremy Renner" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=754&q=Jeremy+Renner&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQyS7LILlPiBHGScgoNqrSEspOt9NMyc3LBhFVyYnHJIlZer9Si1NxKhaDUvLzUoglsjACqmMP7QQAAAA&lei=7M62ZNPuD92U2roPh8G5mAI">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="data:image/jpeg;base64,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" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Jeremy Renner</h2></div>
+            </div></a> 
+        </div>
+        <div class="po"><a target="_blank" title="Hailee Steinfeld" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&hl=en-US&biw=1536&bih=690&q=Hailee+Steinfeld&stick=H4sIAAAAAAAAAONgFuLVT9c3NMxIKStLNrPIUuLSz9U3SDI3zSop0hLLTrbSLykDoviCovz0osRcq-TE4pJFrAIeiZk5qakKwSWpmXlpqTkpO1gZJ7AxAgBz3_6mTgAAAA&lei=05jGZPn_M6OS2roPnZKhwAI">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://media1.popsugar-assets.com/files/thumbor/CFju1tgwfVeWsKV2rSY_zB1J6qU/413x135:2516x2238/fit-in/500x500/filters:format_auto-!!-:strip_icc-!!-/2020/02/25/996/n/1922398/900df5365e55a5a005cbc4.29096210_/i/Hailee-Steinfeld.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Hailee Steinfeld</h2></div>
+            </div></a> 
+        </div>
+        <div class="po"><a target="_blank" title="Alaqua Cox" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&hl=en-US&biw=1536&bih=690&q=Alaqua+Cox&stick=H4sIAAAAAAAAAONgFuLVT9c3NMxIKStLNrPIUoJwc7LL0pJKcgq0xLKTrfRLyoAovqAoP70oMdcqObG4ZBErl2NOYmFpooJzfsUOVsYJbIwA0NtOlUsAAAA&lei=cZnGZPWPFpTk2roP8o6jwA0">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://media1.popsugar-assets.com/files/thumbor/TEn92bCI_GpL2w-_gVvCV_KXLks/411x0:3669x3258/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2021/12/21/021/n/46896193/f3072fe361c263c93a4511.20679463_/i/who-is-alaqua-cox-facts.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Alaqua Cox</h2></div>
+            </div></a> 
+        </div>
+        <div class="po"><a target="_blank" title="Vincent D'Onofrio" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&hl=en-US&biw=1536&bih=690&q=Vincent+D%27Onofrio&stick=H4sIAAAAAAAAAONgFuLVT9c3NMxIKStLNrPIUuLUz9U3MMzITYrXEstOttIvKQOi-IKi_PSixFyr5MTikkWsgmGZecmpeSUKLur-eflpRZn5O1gZJ7AxAgBMAaIsTgAAAA&lei=rZnGZMPuJte02roP6_GZsA0">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://flxt.tmsimg.com/assets/64804_v9_bb.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Vincent D'Onofrio</h2></div>
+            </div></a> 
+        </div>
+        <div class="po"><a target="_blank" title="Tony Dalton" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&hl=en-US&biw=1536&bih=690&q=Tony+Dalton&stick=H4sIAAAAAAAAAONgFuLVT9c3NMxIKStLNrPIUuLSz9U3MCrMqDBI1xLLTrbSLykDoviCovz0osRcq-TE4pJFrNwh-XmVCi6JOSX5eTtYGSewMQIALNsflkkAAAA&lei=5JnGZMPHHKK22roP_bO0wA0">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://www.themoviedb.org/t/p/w500/2iQXgOKkZobc93mMM4yDuYkuLA8.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Tony Dalton</h2></div>
+            </div></a> 
+        </div>
+       
+        
+      </div>
+
+      <!--Overview-->
+      <h2 class="h2">Hawkeye Overview</h2>
+      <div class="divrow" style="height: 60px;">
+        <div class="po" style="margin-right: 40px; margin-left: 33px;padding: 0px 20px 20px 20px;">
+          <p id="para">Marvel Studios’ “Hawkeye” stars Jeremy Renner as Hawkeye, who teams up with another well-known archer from the Marvel comics, Kate Bishop, played by Hailee Steinfeld. The cast also includes Vera Farmiga, Fra Fee, Tony Dalton, Zahn McClarnon, Brian d’Arcy James and newcomer Alaqua Cox as Maya Lopez. “Hawkeye” is helmed by Rhys Thomas and directing duo Bert and Bertie. “Hawkeye” debuts on Disney+ Nov. 24, 2021.
+
+
+        </p>
+        </div>
+      </div>
+
+      <h2 class="h2">Characters</h2>
+      <div class="divrow" style="height: 370px;">
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/hawkeye-clint-barton/on-screen">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/AvengersEndGameHawkyeCharacter.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Hawkeye</h2></div>
+            </div></a> 
+          </div>
+          <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/black-widow-natasha-romanoff/on-screen">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/AvengersEndGameBlackWidowCharacter.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Black Widow</h2></div>
+            </div></a> 
+          </div>
+          <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/echo-maya-lopez">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/HawkyeEcho.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Echo</h2></div>
+            </div></a> 
+          </div>
+          <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/black-widow-yelena/in-comics/profile">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/HawkyeYelena.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Yelena</h2></div>
+            </div></a> 
+          </div>
+          <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/hawkeye-kate-bishop/in-comics">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/HawkyeKate.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Kate Bishop</h2></div>
+            </div></a> 
+          </div>
+      </div>
+
+
+      <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">MarvelInfo is a web-page where you can find all the information regarding Marvel Movies, Series and Characters</p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+              </div>
+              <div class="email">
+                <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-envelope"></i>marvelinfo379@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Categories</div>
+            <div><a href="/nav" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Home</a></div>
+            <div><a href="/marvelmovies"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Movies</a></div>
+            <div><a href="/series"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Web-Series</a></div>
+            <div><a href="/phase"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Phases</a></div>
+            <div><a href="/demo"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Characters</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">
+              <img style="height: 100px;width: 500px;margin-top: 20px;" src="{%static 'images/MarvelStudio.png'%}" alt="">
+              <img style="height: 80px;width: 200px;margin-left: 160px;margin-top: 20px;" src="{%static 'images/MarvelLogo.png'%}" alt="">
+              
+            </div>
+            <!--
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+  
+            
+             <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter icon"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>-->
+          </div>
+        </div>
+        <div class="bottom">
+          <p></p>
+        </div>
+      </footer>
+  
+
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+       /* $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+});
+*/
+let docTitle=document.title;
+window.addEventListener('blur',()=>{
+  document.title='Bhai aaja Vapis';
+});
+window.addEventListener('focus',()=>{
+  document.title=docTitle;
+});
+
+</script>
+
+<script>
+  /*function My_Video() {
+            document.getElementById("w1").src =
+               "{%static 'video/intronav2.mp4'%}";
+            document.getElementById("vedio").load();
+        }
+        window.onload=My_Video()*/
+        
+</script>
+</body>
+</html>

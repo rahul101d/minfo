@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="{%static 'images/marlogo.png'%}"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIES</title>
+    <link rel="stylesheet" href="{%static 'css/marvelmovies.css'%}">
+    <style>
+        .pic1{
+            background-image:url("{%static 'images/moviepicintro.jpg'%}");
+
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="/nav">MARVEL</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="/nav" >Home</a></li>
+                    <li><a href="/marvelmovies">Movies</a></li>
+                    <li><a href="/series">Web-Series</a></li>
+                    <li><a href="/phase">Phases</a></li>
+                    <li><a href="/demo">Characters</a></li>
+                    <li><a href="/accounts/logout">Logout</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <div class="pic1">
+        <div  class="pic">
+            <video id="vedio" autoplay muted loop height="500px" width="1900px" onload="onloadfunc()">
+                <!--<source src="{%static 'video/intronav.mp4'%}" type="video/mp4">
+                <source id="w1" src="{%static 'video/intronav.mp4'%}" type="video/mp4">-->
+              </video>
+        </div>
+
+    </div>
+
+    <h2 class="h2">Marvel-Cinematic-Universe Movies by Timeline</h2>
+      <div class="divrow" style="height: 1300px;">
+
+        <div class="po"><a href="/CaptainAmerica1">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/cafa1.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/cafa1title.png'%}" alt="" class="title">
+                <img src="{%static 'images/cafa1c.png'%}" alt="" id="cafa1">
+              </div></a>
+        </div>
+
+        <div class="po"><a href="/IronMan1">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/ironman1.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/ironmantitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/ironman1c.png'%}" alt="" id="im1">
+              </div></a>
+        </div>
+        <div class="po"><a href="/IronMan2">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/ironman2.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/ironman2title.png'%}"  alt="" class="title">
+                <img src="{%static 'images/ironman2c.png'%}" alt=""  id="ironman2">
+              </div></a>
+        </div>
+        <div class="po"><a href="/Hulk1">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/tih.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/tihtitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/tihc.png'%}" alt="" id="tih">
+              </div></a>
+        </div>
+        <div class="po"><a href="/Thor1">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/thor1.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/thortitle.png'%}"  alt="" class="title">
+                <img src="{%static 'images/thor1c.png'%}" alt=""  id="thor1">
+              </div></a>
+        </div>
+        <div class="po"><a href="/Avrngers1">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="https://i.pinimg.com/736x/ec/60/fa/ec60fa54e8d4aaa7d747371e38deca74.jpg" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/avengertitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/avenger.png'%}" alt="" class="Aven1">
+              </div></a>
+            </div>
+       
+        <div class="po"><a href="/Thor2">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/thordark.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/thordarktitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/thordarkc.png'%}" alt=""  id="thordark">
+              </div></a>
+        </div>
+        <div class="po"><a href="/IronMan3">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/ironman3.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/ironman3title.png'%}" alt="" class="title">
+                <img src="{%static 'images/ironman3c.png'%}" alt="" id="ironman3">
+              </div></a>
+        </div>
+        <div class="po"><a href="/CaptainAmerica2">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/caws.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/cawstitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/cawsc.png'%}" alt=""  id="caws">
+              </div></a>
+        </div>        
+        <div class="po"><a href="/GuardiansOfGalaxy1">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/gogal1.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/gogal1title.png'%}" alt="" class="title">
+                <img src="{%static 'images/gogal1c.png'%}" alt="" id="gogal1">
+              </div></a>
+        </div>
+        <div class="po"><a href="/Guardians_of_Galaxy2">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="https://www.tubewp.com/wp-content/uploads/2023/05/hd-guardians-of-the-galaxy-wallpapers-2.jpg" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/gog2title.png'%}" alt="" class="title">
+                <img src="{%static 'images/gog2png.png'%}" alt="" class="go">
+              </div></a>
+        </div>
+        <div class="po"><a href="/AvengersAgeOfUltron">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/avengeraoaltron.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/avengeraoaltrontitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/avengeraoaltronc.png'%}" alt=""  id="avengeraoaltron">
+              </div></a>
+        </div>
+        <div class="po"><a href="/AntMan1">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/antman.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/antmantitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/antmc.png'%}" alt="" id="antman">
+              </div></a>
+        </div>
+        <div class="po"><a href="/CaptainAmericaCivilWar">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/cacw.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/cacwtitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/cacwc.png'%}" alt="" id="cacw">
+              </div></a>
+        </div>
+        <div class="po"><a href="/BlackWidow1">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/blackwidow.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/blackwidowtitle.png'%}"  alt="" class="title">
+                <img src="{%static 'images/blackwidowc.png'%}" alt=""  id="blackwidow">
+              </div></a>
+        </div>
+        <div class="po"><a href="/BlackPanther1">
+            <div class="card">
+                <div class="wrapper">
+                    <img src="https://images6.alphacoders.com/898/898734.jpg" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/blackpanthertitle.png'%}"  alt="" class="title">
+                <img src="{%static 'images/blackpantherc.png'%}" alt="" id="blackpanther">
+            </div></a>
+        </div>
+        <div class="po"><a href="/SpidermanHomecoming">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/spaiderhc.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/spaiderhctitle.png'%}"  alt="" class="title">
+                <img src="{%static 'images/spaiderhcc.png'%}" alt=""  id="spaiderhc">
+            </div></a>
+        </div>
+        <div class="po"><a href="/DoctorStrange1">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/doctorstrange.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/dstrangetitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/dstrangec.png'%}" alt="" id="dstrange">
+              </div></a>
+        </div>
+        <div class="po"><a href="/ThorRagnorok">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="https://wallpapercave.com/wp/wp2497232.jpg" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/thorragtitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/thorragc.png'%}" alt="" id="thorag">
+              </div></a>
+        </div>
+        <div class="po"><a href="/Antman_and_Wasp">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/antw.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/antwpng.png'%}" alt="" class="title">
+                <img src="{%static 'images/antwch.png'%}" alt=""  id="antw">
+              </div></a>
+        </div>
+        <div class="po"><a href="/AvengersInfinityWar">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/infinitywar.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/infinitytitle.png'%}"  alt="" class="title">
+                <img src="{%static 'images/thanosiwc.png'%}" alt=""  id="infinity1">
+              </div></a>
+        </div>
+        <div class="po"><a href="/AvengersEndGame">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="https://images8.alphacoders.com/100/thumb-1920-1003220.png" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/endpng.png'%}" alt="" class="title">
+                <img src="{%static 'images/thanos.png'%}" alt="" class="thanos">
+              </div></a>
+        </div>
+        <div class="po"><a href="/SpidermanFarFromHome">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/spaiderffh.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/spaiderffhtitle.png'%}" style="margin-bottom: -40px;" alt="" class="title">
+                <img src="{%static 'images/spaiderffhc.png'%}" alt=""  id="spaiderffh">
+              </div></a>
+        </div>
+        <div class="po"><a href="/SpidermanNoWayHome">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="https://i.pinimg.com/1200x/90/13/38/901338ecc63e4328774df3f3e0567a55.jpg" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/spaidernwhtitle.png'%}"  alt="" class="title">
+                <img src="{%static 'images/spaidernwhc.png'%}" alt=""  id="spaidernwh">
+            </div></a>
+        </div>
+        <div class="po"><a href="/Shangchi">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="https://www.pixel4k.com/wp-content/uploads/2021/11/shang-chi-and-the-legend-of-the-ten-rings-movie-4k_1637425643.jpg" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/shangtitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/shangpng.png'%}" alt="" class="shangchi">
+              </div></a>
+        </div>
+        <div class="po"><a href="/WakandaForever">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/846a9086-8a40-43e0-aa10-2fc7d6d73730/dfezt3s-f6014839-e793-4a61-922c-9940979388fa.jpg/v1/fill/w_1280,h_720,q_75,strp/black_panther_wakanda_forever__talocan_wallpaper_by_mintmovi3_dfezt3s-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvODQ2YTkwODYtOGE0MC00M2UwLWFhMTAtMmZjN2Q2ZDczNzMwXC9kZmV6dDNzLWY2MDE0ODM5LWU3OTMtNGE2MS05MjJjLTk5NDA5NzkzODhmYS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.t3-VG349kFZgi1XTppFl61_T94kzmKXIc5qSy0aCUWk" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/wftitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/wfbp.png'%}" alt="" id="wf">
+              </div></a>
+        </div>
+        <div class="po"><a href="/Thor4">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/thorlot.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/thorlottitle.png'%}"  alt="" class="title">
+                <img src="{%static 'images/thorlotc.png'%}" alt=""  id="thorlot">
+            </div></a>
+        </div>
+        <div class="po"><a href="/DoctorStrange2">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/doctormom.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/doctormomtitle.png'%}"  alt="" class="title">
+                <img src="{%static 'images/doctormomc.png'%}" alt=""  id="doctormom">
+            </div></a>
+        </div>
+        <div class="po"><a href="/GuardiansOfGalaxy3">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/gogv3.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/gogv3title.png'%}"  alt="" class="title">
+                <img src="{%static 'images/gogv3c.png'%}" alt=""  id="gogv3">
+              </div></a>
+        </div>
+        <div class="po"><a href="/Antman_and_Wasp_Quantamania">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="https://wallpaperaccess.com/full/8880053.jpg" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/antqtitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/antqc.png'%}" alt="" id="antq">
+              </div></a>
+        </div>
+    </div>
+
+
+    <h2 class="h2">Marvel-Cinematic-Universe Phase One</h2>
+      <div class="divrow" style="height: 250px;">
+        
+        <div class="po"><a href="/IronMan1">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/ironman1.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/ironmantitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/ironman1c.png'%}" alt="" id="im1">
+              </div></a>
+        </div>
+        <div class="po"><a href="/Hulk1">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/tih.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/tihtitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/tihc.png'%}" alt="" id="tih">
+              </div></a>
+        </div>
+        <div class="po"><a href="/IronMan2">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/ironman2.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/ironman2title.png'%}"  alt="" class="title">
+                <img src="{%static 'images/ironman2c.png'%}" alt=""  id="ironman2">
+              </div></a>
+        </div> 
+        <div class="po"><a href="/Thor1">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/thor1.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/thortitle.png'%}"  alt="" class="title">
+                <img src="{%static 'images/thor1c.png'%}" alt=""  id="thor1">
+              </div></a>
+        </div>
+        <div class="po"><a href="/CaptainAmerica1">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/cafa1.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/cafa1title.png'%}" alt="" class="title">
+                <img src="{%static 'images/cafa1c.png'%}" alt="" id="cafa1">
+              </div></a>
+        </div>
+        <div class="po"><a href="/Avengers1">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="https://i.pinimg.com/736x/ec/60/fa/ec60fa54e8d4aaa7d747371e38deca74.jpg" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/avengertitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/avenger.png'%}" alt="" class="Aven1">
+              </div></a>
+        </div>
+    </div>
+
+    <h2 class="h2">Marvel-Cinematic-Universe Phase Two</h2>
+    <div class="divrow" style="height: 250px;">
+        <div class="po"><a href="/IronMan3">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/ironman3.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/ironman3title.png'%}" alt="" class="title">
+                <img src="{%static 'images/ironman3c.png'%}" alt="" id="ironman3">
+              </div></a>
+        </div>
+        <div class="po"><a href="/Thor2">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/thordark.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/thordarktitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/thordarkc.png'%}" alt=""  id="thordark">
+              </div></a>
+        </div>
+        <div class="po"><a href="/CaptainAmerica2">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/caws.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/cawstitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/cawsc.png'%}" alt=""  id="caws">
+              </div></a>
+        </div>
+        <div class="po"><a href="/GuardiansOfGalaxy1">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/gogal1.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/gogal1title.png'%}" alt="" class="title">
+                <img src="{%static 'images/gogal1c.png'%}" alt="" id="gogal1">
+              </div></a>
+        </div>
+        <div class="po"><a href="/AvengersAgeOfUltron">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/avengeraoaltron.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/avengeraoaltrontitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/avengeraoaltronc.png'%}" alt=""  id="avengeraoaltron">
+              </div></a>
+        </div>
+        <div class="po"><a href="/AntMan1">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/antman.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/antmantitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/antmc.png'%}" alt="" id="antman">
+              </div></a>
+        </div>
+    </div>
+
+
+    <h2 class="h2">Marvel-Cinematic-Universe Phase Three</h2>
+    <div class="divrow" style="height: 520px;">
+        <div class="po"><a href="/CaptainAmericaCivilWar">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/cacw.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/cacwtitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/cacwc.png'%}" alt="" id="cacw">
+              </div></a>
+        </div>
+        <div class="po"><a href="/DoctorStrange1">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/doctorstrange.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/dstrangetitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/dstrangec.png'%}" alt="" id="dstrange">
+              </div></a>
+        </div>
+        <div class="po"><a href="/Guardians_of_Galaxy2">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="https://www.tubewp.com/wp-content/uploads/2023/05/hd-guardians-of-the-galaxy-wallpapers-2.jpg" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/gog2title.png'%}" alt="" class="title">
+                <img src="{%static 'images/gog2png.png'%}" alt="" class="go">
+              </div></a>
+        </div>
+        <div class="po"><a href="/SpidermanHomecoming">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/spaiderhc.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/spaiderhctitle.png'%}"  alt="" class="title">
+                <img src="{%static 'images/spaiderhcc.png'%}" alt=""  id="spaiderhc">
+              </div></a>
+          </div>
+        <div class="po"><a href="/ThorRagnorok">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="https://wallpapercave.com/wp/wp2497232.jpg" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/thorragtitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/thorragc.png'%}" alt="" id="thorag">
+              </div></a>
+        </div>
+        <div class="po"><a href="/BlackPanther1">
+            <div class="card">
+              <div class="wrapper">
+                <img src="https://images6.alphacoders.com/898/898734.jpg" class= "cover-image" alt="">
+              </div>
+              <img src="{%static 'images/blackpanthertitle.png'%}"  alt="" class="title">
+              <img src="{%static 'images/blackpantherc.png'%}" alt="" id="blackpanther">
+            </div></a>
+            </div>
+        <div class="po"><a href="/AvengersInfinityWar">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/infinitywar.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/infinitytitle.png'%}"  alt="" class="title">
+                <img src="{%static 'images/thanosiwc.png'%}" alt=""  id="infinity1">
+              </div></a>
+        </div>
+        <div class="po"><a href="/Antman_and_Wasp">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="https://c4.wallpaperflare.com/wallpaper/759/82/331/ant-marvel-ant-man-ant-man-and-the-wasp-wallpaper-preview.jpg" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/antwpng.png'%}" alt="" class="title">
+                <img src="{%static 'images/antwch.png'%}" alt=""  id="antw">
+              </div></a>
+        </div>
+        
+        <div class="po"><a href="/AvengersEndGame">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="https://images8.alphacoders.com/100/thumb-1920-1003220.png" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/endpng.png'%}" alt="" class="title">
+                <img src="{%static 'images/thanos.png'%}" alt="" class="thanos">
+              </div></a>
+        </div>
+        <div class="po"><a href="/SpidermanFarFromHome">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/spaiderffh.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/spaiderffhtitle.png'%}" style="margin-bottom: -40px;" alt="" class="title">
+                <img src="{%static 'images/spaiderffhc.png'%}" alt=""  id="spaiderffh">
+              </div></a>
+        </div>
+    </div>
+
+    <h2 class="h2">Marvel-Cinematic-Universe Phase Four</h2>
+    <div class="divrow" style="height: 250px;">
+        <div class="po"><a href="/BlackWidow1">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/blackwidow.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/blackwidowtitle.png'%}"  alt="" class="title">
+                <img src="{%static 'images/blackwidowc.png'%}" alt=""  id="blackwidow">
+              </div></a>
+        </div>
+        <div class="po"><a href="/Shangchi">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="https://www.pixel4k.com/wp-content/uploads/2021/11/shang-chi-and-the-legend-of-the-ten-rings-movie-4k_1637425643.jpg" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/shangtitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/shangpng.png'%}" alt="" class="shangchi">
+              </div></a>
+        </div>
+        
+        <div class="po"><a href="/SpidermanNoWayHome">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="https://i.pinimg.com/1200x/90/13/38/901338ecc63e4328774df3f3e0567a55.jpg" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/spaidernwhtitle.png'%}"  alt="" class="title">
+                <img src="{%static 'images/spaidernwhc.png'%}" alt=""  id="spaidernwh">
+              </div></a>
+        </div>
+        <div class="po"><a href="/DoctorStrange2">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/doctormom.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/doctormomtitle.png'%}"  alt="" class="title">
+                <img src="{%static 'images/doctormomc.png'%}" alt=""  id="doctormom">
+              </div></a>
+        </div>
+        <div class="po"><a href="/Thor4">
+            <div class="card">
+                    <div class="wrapper">
+                    <img src="{%static 'images/thorlot.jpg'%}" class= "cover-image" alt="">
+            </div>
+                <img src="{%static 'images/thorlottitle.png'%}"  alt="" class="title">
+                <img src="{%static 'images/thorlotc.png'%}" alt=""  id="thorlot">
+            </div></a>
+        </div>  
+        <div class="po"><a href="/WakandaForever">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/846a9086-8a40-43e0-aa10-2fc7d6d73730/dfezt3s-f6014839-e793-4a61-922c-9940979388fa.jpg/v1/fill/w_1280,h_720,q_75,strp/black_panther_wakanda_forever__talocan_wallpaper_by_mintmovi3_dfezt3s-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvODQ2YTkwODYtOGE0MC00M2UwLWFhMTAtMmZjN2Q2ZDczNzMwXC9kZmV6dDNzLWY2MDE0ODM5LWU3OTMtNGE2MS05MjJjLTk5NDA5NzkzODhmYS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.t3-VG349kFZgi1XTppFl61_T94kzmKXIc5qSy0aCUWk" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/wftitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/wfbp.png'%}" alt="" id="wf">
+              </div></a>
+        </div>
+    </div>
+
+    <h2 class="h2">Marvel-Cinematic-Universe Phase Five</h2>
+    <div class="divrow" style="height: 250px;">
+      <div class="po"><a href="/Antman_and_Wasp_Quantamania">
+        <div class="card">
+            <div class="wrapper">
+              <img src="https://wallpaperaccess.com/full/8880053.jpg" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/antqtitle.png'%}" alt="" class="title">
+            <img src="{%static 'images/antqc.png'%}" alt="" id="antq">
+          </div></a>
+      </div>
+      <div class="po"><a href="/GuardiansOfGalaxy3">
+        <div class="card">
+            <div class="wrapper">
+              <img src="{%static 'images/gogv3.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/gogv3title.png'%}"  alt="" class="title">
+            <img src="{%static 'images/gogv3c.png'%}" alt=""  id="gogv3">
+          </div></a>
+      </div>
+    
+    </div>
+
+
+      <h2 class="h2">Welcome to Spider-Verse</h2>
+      <div class="divrow" style="height: 520px;">
+        <div class="po"><a href="/Spiderman1">
+          <div class="card">
+              <div class="wrapper">
+                <img src="{%static 'images/spaiderman1.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <img src="{%static 'images/spaiderman1title.png'%}" alt="" class="title">
+              <img src="{%static 'images/spaiderman1.png'%}" alt="" id="spiderman1">
+            </div></a>
+      </div>
+      <div class="po"><a href="/Spiderman2">
+          <div class="card">
+              <div class="wrapper">
+                <img src="{%static 'images/spiderman2.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <img src="{%static 'images/spiderman2title.png'%}" alt="" class="title">
+              <img src="{%static 'images/spiderman2c.png'%}" alt=""  id="spiderman2">
+            </div></a>
+      </div>
+      <div class="po"><a href="/Spiderman3">
+          <div class="card">
+              <div class="wrapper">
+                <img src="{%static 'images/spaiderman3.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <img src="{%static 'images/spiderman3title.png'%}" alt="" class="title">
+              <img src="{%static 'images/spiderman3c.png'%}" alt="" id="spiderman3">
+            </div></a>
+      </div>
+      <div class="po"><a href="/TheAmazing1">
+          <div class="card">
+              <div class="wrapper">
+                <img src="{%static 'images/spiderasm.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <img src="{%static 'images/spiderasmtitle.png'%}" alt="" class="title">
+              <img src="{%static 'images/spiderasmc.png'%}" alt="" id="spiderasm">
+            </div></a>
+      </div>
+      <div class="po"><a href="/TheAmazing2">
+        <div class="card">
+            <div class="wrapper">
+              <img src="{%static 'images/spiderasm2.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/spiderasm2title.png'%}" alt="" class="title">
+            <img src="{%static 'images/spiderasm2c.png'%}" alt="" id="spiderasm2">
+          </div></a>
+      </div>
+      <div class="po"><a href="/SpidermanHomecoming">
+        <div class="card">
+            <div class="wrapper">
+              <img src="{%static 'images/spaiderhc.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/spaiderhctitle.png'%}"  alt="" class="title">
+            <img src="{%static 'images/spaiderhcc.png'%}" alt=""  id="spaiderhc">
+          </div></a>
+      </div>
+      <div class="po"><a href="/SpidermanFarFromHome">
+        <div class="card">
+            <div class="wrapper">
+              <img src="{%static 'images/spaiderffh.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/spaiderffhtitle.png'%}" style="margin-bottom: -40px;" alt="" class="title">
+            <img src="{%static 'images/spaiderffhc.png'%}" alt=""  id="spaiderffh">
+          </div></a>
+      </div>
+      <div class="po"><a href="/SpidermanNoWayHome">
+        <div class="card">
+            <div class="wrapper">
+              <img src="{%static 'images/spaidernwh.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/spaidernwhtitle.png'%}"  alt="" class="title">
+            <img src="{%static 'images/spaidernwhc.png'%}" alt=""  id="spaidernwh">
+          </div></a>
+      </div>
+      
+      <div class="po"><a href="/Venom1">
+        <div class="card">
+            <div class="wrapper">
+              <img src="{%static 'images/venom1.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/venomtitle.png'%}"  alt="" class="title">
+            <img src="{%static 'images/venom1c.png'%}" alt=""  id="venom1">
+          </div></a>
+      </div>
+      <div class="po"><a href="/Venom2">
+        <div class="card">
+            <div class="wrapper">
+              <img src="{%static 'images/venom2.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/venom2title.png'%}"  alt="" class="title">
+            <img src="{%static 'images/venom2c.png'%}" alt=""  id="venom2">
+          </div></a>
+      </div>
+
+    </div>
+    
+    
+
+    <h2 class="h2">Marvel Legacy Movies</h2>
+    <div class="divrow" style="height: 550px;">
+      <div class="po"><a href="/Deadpool1">
+        <div class="card">
+            <div class="wrapper">
+              <img src="{%static 'images/deadpool.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/deadtitle.png'%}" alt="" class="title" >
+            <img src="{%static 'images/depng.png'%}" alt="" class="id">
+          </div></a>
+        </div>
+        <div class="po"><a href="/Spiderman2">
+          <div class="card">
+              <div class="wrapper">
+                <img src="{%static 'images/spiderman2.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <img src="{%static 'images/spiderman2title.png'%}" alt="" class="title">
+              <img src="{%static 'images/spiderman2c.png'%}" alt=""  id="spiderman2">
+            </div></a>
+      </div>
+        
+        <div class="po"><a href="/Spiderman1">
+          <div class="card">
+              <div class="wrapper">
+                <img src="{%static 'images/spaiderman1.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <img src="{%static 'images/spaiderman1title.png'%}" alt="" class="title">
+              <img src="{%static 'images/spaiderman1.png'%}" alt="" id="spiderman1">
+            </div></a>
+      </div>
+      
+      <div class="po"><a href="/Spiderman3">
+          <div class="card">
+              <div class="wrapper">
+                <img src="{%static 'images/spaiderman3.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <img src="{%static 'images/spiderman3title.png'%}" alt="" class="title">
+              <img src="{%static 'images/spiderman3c.png'%}" alt="" id="spiderman3">
+            </div></a>
+      </div>
+      <div class="po"><a href="/Deadpool2">
+        <div class="card">
+            <div class="wrapper">
+              <img src="{%static 'images/dead2.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/dead2title.png'%}" alt="" class="title">
+            <img src="{%static 'images/dead2c.png'%}" alt="" id="dead2">
+        </div></a>
+      </div>
+      <div class="po"><a href="/Venom2">
+        <div class="card">
+            <div class="wrapper">
+              <img src="{%static 'images/venom2.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/venom2title.png'%}"  alt="" class="title">
+            <img src="{%static 'images/venom2c.png'%}" alt=""  id="venom2">
+          </div></a>
+      </div>
+      <div class="po"><a href="/TheAmazing1">
+          <div class="card">
+              <div class="wrapper">
+                <img src="{%static 'images/spiderasm.jpg'%}" class= "cover-image" alt="">
+              </div>
+              <img src="{%static 'images/spiderasmtitle.png'%}" alt="" class="title">
+              <img src="{%static 'images/spiderasmc.png'%}" alt="" id="spiderasm">
+            </div></a>
+      </div>
+      <div class="po"><a href="/TheAmazing2">
+        <div class="card">
+            <div class="wrapper">
+              <img src="{%static 'images/spiderasm2.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/spiderasm2title.png'%}" alt="" class="title">
+            <img src="{%static 'images/spiderasm2c.png'%}" alt="" id="spiderasm2">
+          </div></a>
+      </div>
+      <div class="po"><a href="/Venom1">
+        <div class="card">
+            <div class="wrapper">
+              <img src="{%static 'images/venom1.jpg'%}" class= "cover-image" alt="">
+            </div>
+            <img src="{%static 'images/venomtitle.png'%}"  alt="" class="title">
+            <img src="{%static 'images/venom1c.png'%}" alt=""  id="venom1">
+          </div></a>
+      </div>
+      
+    </div>
+
+
+    <footer>
+      <div class="content">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic">About us</div>
+            <p style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">MarvelInfo is a web-page where you can find all the information regarding Marvel Movies, Series and Characters</p>
+          </div>
+          <div class="lower">
+            <div class="topic">Contact us</div>
+            <div class="phone">
+              <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+            </div>
+            <div class="email">
+              <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-envelope"></i>marvelinfo379@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="middle box">
+          <div class="topic">Categories</div>
+          <div><a href="/nav" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Home</a></div>
+          <div><a href="/marvelmovies"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Movies</a></div>
+          <div><a href="/series"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Web-Series</a></div>
+          <div><a href="/phase"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Phases</a></div>
+          <div><a href="/demo"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Characters</a></div>
+        </div>
+        <div class="right box">
+          <div class="topic">
+            <img style="height: 100px;width: 500px;margin-top: 20px;" src="{%static 'images/MarvelStudio.png'%}" alt="">
+            <img style="height: 80px;width: 200px;margin-left: 160px;margin-top: 20px;" src="{%static 'images/MarvelLogo.png'%}" alt="">
+            
+          </div>
+          <!--
+          <form action="#">
+            <input type="text" placeholder="Enter email address">
+            <input type="submit" name="" value="Send">
+
+          
+           <div class="media-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter icon"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </form>-->
+        </div>
+      </div>
+      <div class="bottom">
+        <p></p>
+      </div>
+    </footer>
+
+
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+       /* $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+});
+*/
+
+
+let docTitle=document.title;
+window.addEventListener('blur',()=>{
+  document.title='Bhai aaja Vapis';
+});
+window.addEventListener('focus',()=>{
+  document.title=docTitle;
+});
+
+</script>
+
+<script>
+  /*function My_Video() {
+            document.getElementById("w1").src =
+               "{%static 'video/intronav2.mp4'%}";
+            document.getElementById("vedio").load();
+        }
+        window.onload=My_Video()*/
+        
+</script>
+
+
+
+</body>
+</html>

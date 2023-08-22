@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="{%static 'images/marlogo.png'%}"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man: No Way Home</title>
+    <link rel="stylesheet" href="{%static 'MovieCss/SpidermanNoWayHome.css'%}">
+    <style>
+      .pic1{
+          background-image:url("{%static 'images/SpidermanNoWayHomeintro.jpg'%}");
+
+      }
+  </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="/nav">MARVEL</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="/nav" >Home</a></li>
+                    <li><a href="/marvelmovies">Movies</a></li>
+                    <li><a href="/series">Web-Series</a></li>
+                    <li><a href="/phase">Phases</a></li>
+                    <li><a href="/demo">Characters</a></li>
+                    <li><a href="/accounts/logout">Logout</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <div class="pic1">
+      <div  class="pic">
+          <video id="vedio" autoplay muted loop height="500px" width="1900px" onload="onloadfunc()">
+              <!--<source src="{%static 'video/intronav.mp4'%}" type="video/mp4">
+              <source id="w1" src="{%static 'video/intronav.mp4'%}" type="video/mp4">-->
+            </video>
+      </div>
+
+  </div>
+
+    <h2 class="h21">Spider-Man: No Way Home</h2>    
+      <div class="divrow"  style="height: 400px; margin-left: 300px;">
+        <div class="po">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="https://i.pinimg.com/1200x/90/13/38/901338ecc63e4328774df3f3e0567a55.jpg" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/spaidernwhtitle.png'%}"  alt="" class="title">
+                <img src="{%static 'images/spaidernwhc.png'%}" alt=""  id="spaidernwh">
+              </div>
+            </div>
+      
+      <div class="po" style="margin-left: 40px;">
+        <table>
+          <tr id="tr">
+            <td id="td">Directed by</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.google.com/search?q=jon+watts&rlz=1C1CHBF_enIN986IN986&oq=Jon+Watts&gs_lcrp=EgZjaHJvbWUqDwgAEAAYQxjjAhixAxiKBTIPCAAQABhDGOMCGLEDGIoFMgwIARAuGEMYsQMYigUyBwgCEAAYgAQyBwgDEC4YgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQczNjZqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">Jon Watts</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Based on</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.marvel.com/comics/issue/6482/the_amazing_spider-man_1963_1">	
+                Spider-Man
+                by Stan Lee
+                Steve Ditko</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Produced by</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.google.com/search?q=kevin+feige&rlz=1C1CHBF_enIN986IN986&oq=Kevin+Feige&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYsQMYgAQyDQgAEAAY4wIYsQMYgAQyCggBEC4YsQMYgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQcyODhqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8">Kevin Feige</a></td>
+          </tr>	
+          <tr id="tr">
+            <td id="td">Production Company</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.marvel.com/movies">Marvel Studios</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Release Date</td>
+            <td id="td1">:</td>
+            <td id="td">December 17, 2021</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Running time</td>
+            <td id="td1">:</td>
+            <td id="td">2 Hour 28 Minutes</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Budget	</td>
+            <td id="td1">:</td>
+            <td id="td">	$200 million</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Box office</td>
+            <td id="td1">:</td>
+            <td id="td">	$1.922 billion</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Rating</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.imdb.com/title/tt10872600/">8.2/10 IMDb</a> | <a target="_blank" href="https://www.rottentomatoes.com/m/spider_man_no_way_home">93% Rotten Tomatoes</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+      <h2 class="h2">Spider-Man: No Way Home Official Trailer</h2>
+      <div class="divrow" style="height: 640px;">
+        <iframe id="iframe" width="1200" height="600" src="https://www.youtube.com/embed/ei7R345Cjo0" title="SPIDER-MAN: NO WAY HOME - Official Hindi Teaser Trailer (HD) | In Cinemas December 17" frameborder="1px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+      </div>
+
+      <!--Movie Cast-->
+      <h2 class="h2">Movie Cast</h2>
+      <div class="divrow" style="height: 510px;">
+        <div class="po"><a target="_blank" title="Tom Holland" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=754&q=Tom+Holland&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQyS7LILlPiAnEKTM1ySpK0hLKTrfTTMnNywYRVcmJxySJW7pD8XAWP_JycxLyUCWyMABZd6kBAAAAA&lei=Y9G2ZJDSDpOy4-EP78GRqAE">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="data:image/jpeg;base64,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" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Tom Holland</h2></div>
+            </div></a> 
+        </div>
+        <div class="po"><a target="_blank" title="Tobey Maguire" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Tobey+Maguire&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwzMzYoi88pU-LUz9U3MDQtyE7WEspOttJPy8zJBRNWyYnFJYtYeUPyk1IrFXwT00szi1J3sDJOYGMEAFUJYgVGAAAA&lei=SM3EZLyQCY6cseMPid2osA0">
+            <div class="card1">
+              <div class="wrapper1">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTYwMTI5NTM2OF5BMl5BanBnXkFtZTcwODk3MDQ2Mg@@._V1_FMjpg_UX1000_.jpg" class= "cover-image1" alt="">
+              </div>
+              <div class="wrapper2"><h2 class="heading1" >Tobey Maguire</h2></div>
+            </div></a> 
+        </div>
+        <div class="po"><a target="_blank" title="Zendaya" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Zendaya&stick=H4sIAAAAAAAAAONgFuLSz9U3KM9OT6ooVAKzU1LSDC0qtISyk6300zJzcsGEVXJicckiVvao1LyUxMrEHayME9gYAd6Oxcc-AAAA&lei=wcfEZIiZCe6RseMPpOC3uAk">
+          <div class="card1">
+              <div class="wrapper1">
+                <img src="https://shortyawards.imgix.net/entries/12th/11577711-a41b-4d1f-ab18-b88c22038cb8.png?auto=format&fit=crop&h=400&q=65&w=400&s=faed4be9ac994f71478e48eafbad8a04" class= "cover-image1" alt="">
+              </div>
+              <div class="wrapper2"><h2 class="heading1" style="margin-bottom: 197px;">Zendaya </h2></div>
+            </div></a> 
+        </div>
+        <div class="po"><a target="_blank" title="Andrew Garfield" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Andrew+Garfield&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwzMzYoi88pU-LUz9U3SMvKTcrWEspOttJPy8zJBRNWyYnFJYtY-R3zUopSyxXcE4vSMlNzUnawMk5gYwQAVW98pUgAAAA&lei=Tc3EZOjiN_2eseMPjeWD6Aw">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://ntvb.tmsimg.com/assets/assets/506866_v9_bd.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Andrew Garfield</h2></div>
+              </div></a> 
+          </div>
+          <div class="po"><a target="_blank" title="Marisa Tomei" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Marisa+Tomei&stick=H4sIAAAAAAAAAONgFuLSz9U3KM9OT6ooVOIEsQ3TjUzNtYSyk6300zJzcsGEVXJicckiVh7fxKLM4kSFkPzc1MwdrIwT2BgBfsqWfUIAAAA&lei=ssjEZPu6O8jVseMPk_KHkAI">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://flxt.tmsimg.com/assets/43134_v9_bb.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Marisa Tomei</h2></div>
+              </div></a> 
+          </div>
+          <div class="po"><a target="_blank" title="Jon Favreau" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=754&q=Jon+Favreau&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQyS7LILlPiBHNKylOytYSyk6300zJzcsGEVXJicckiVm6v_DwFt8SyotTE0glsjACxXVBXPwAAAA&lei=RNK2ZPrfFL6y2roPuMSXmAI">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="data:image/jpeg;base64,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" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Jon Favreau</h2></div>
+            </div></a> 
+          </div>
+          <div class="po"><a target="_blank" title="Jacob Batalon" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Jacob+Batalon&stick=H4sIAAAAAAAAAONgFuLSz9U3KM9OT6ooVOLVT9c3NEw2sSg3qTBL0RLKTrbST8vMyQUTVsmJxSWLWHm9EpPzkxScEksSc_LzdrAyTmBjBADB4CJrRwAAAA&lei=9cjEZL7bMqbuseMPicqOmAs">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://resizing.flixster.com/qktKwqdd86XWyuHzRVW6bvzSNHM=/218x280/v2/https://flxt.tmsimg.com/assets/995077_v9_ba.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Jacob Batalon</h2></div>
+              </div></a> 
+          </div> 
+          <div class="po"><a target="_blank" title="Willem Dafoe" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Willem+Dafoe&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwzMzYoi88pU-LUz9U3MEwzT0nREspOttJPy8zJBRNWyYnFJYtYecIzc3JScxVcEtPyU3ewMk5gYwQATps_EUUAAAA&lei=_M3EZMWkHq2hseMPzcOw4Ag">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://www.themoviedb.org/t/p/w500/ui8e4sgZAwMPi3hzEO53jyBJF9B.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Willem Dafoe</h2></div>
+            </div></a> 
+          </div>    
+          <div class="po"><a target="_blank" title="Jamie Foxx" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Jamie+Foxx&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwzMzYoi88pU-LSz9U3MCzPrUgr1hLKTrbST8vMyQUTVsmJxSWLWLm8EnMzUxXc8isqdrAyTmBjBABWIlW0RAAAAA&lei=P87EZKeMEbzWseMPnuyg0AY">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://m.media-amazon.com/images/M/MV5BMTkyNjY1NDg3NF5BMl5BanBnXkFtZTgwNjA2MTg0MzE@._V1_FMjpg_UX1000_.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Jamie Foxx</h2></div>
+            </div></a> 
+           </div>
+           <div class="po"><a target="_blank" title="Tom Hardy" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Tom+Hardy&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwzMzYoi88pU-LUz9U3MK1IMzfVEspOttJPy8zJBRNWyYnFJYtYOUPycxU8EotSKnewMk5gYwQAlyzzxUIAAAA&lei=8c7EZL-fKNePseMP38Oq8AQ">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://flxt.tmsimg.com/assets/269411_v9_bd.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Tom <br> Hardy</h2></div>
+            </div></a> 
+           </div>
+           <div class="po"><a target="_blank" title="Alfred Molina" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Alfred+Molina&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwzMzYoi88pU-LUz9U3MCpPz8nTEspOttJPy8zJBRNWyYnFJYtYeR1z0opSUxR883My8xJ3sDJOYGMEAHpDd5NGAAAA&lei=W8_EZIufAoeeseMP3byV6AU">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://flxt.tmsimg.com/assets/3584_v9_bb.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Alfred Molina</h2></div>
+            </div></a> 
+           </div>
+           <div class="po"><a target="_blank" title="Thomas Haden Church" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Thomas+Haden+Church&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwzMzYoi88pU-LUz9U3MDYxzDPVEspOttJPy8zJBRNWyYnFJYtYhUMy8nMTixU8ElNS8xScM0qLkjN2sDJOYGMEADtlkmRMAAAA&lei=i8_EZI7-L6ziseMP18uBuAw">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://i.guim.co.uk/img/media/c8245d04a38778a85655560a7d9056f5886278bf/0_115_2604_1562/master/2604.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=1ea4c333a694e19964f672d891815509" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1" style="margin-bottom: 130px;">Thomas Haden Church</h2></div>
+            </div></a> 
+           </div>
+           <div class="po"><a target="_blank" title="J. K. Simmons" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=J.+K.+Simmons&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwzMzYoi88pU-LUz9U3MDEpKkvSEspOttJPy8zJBRNWyYnFJYtYeb30FLz1FIIzc3Pz84p3sDJOYGMEAMpLJcpGAAAA&lei=vs_EZKeiCeK7seMPnNmyyAc">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://flxt.tmsimg.com/assets/72076_v9_bb.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">J. K. Simmons</h2></div>
+            </div></a> 
+           </div>
+           <div class="po"><a target="_blank" title="Benedict Wong" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=754&q=Benedict+Wong&stick=H4sIAAAAAAAAAONgFuLWz9U3MDQyS7LILlPiBHHSDIoLSrSEspOt9NMyc3LBhFVyYnHJIlZep9S81JTM5BKF8Py89AlsjAAlaqOnQQAAAA&lei=cN-2ZP-eHqXL2roPp7Cs6Ao">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="data:image/jpeg;base64,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" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Benedict Wong</h2></div>
+            </div></a> 
+        </div>
+      </div>
+
+      <!--Overview-->
+      <h2 class="h2">Spider-Man: No Way Home Overview</h2>
+      <div class="divrow" style="height: 100px;">
+        <div class="po" style="margin-right: 40px; margin-left: 33px;padding: 0px 20px 20px 20px;">
+          <p id="para">With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.Spider-Man seeks the help of Doctor Strange to forget his exposed secret identity as Peter Parker. However, Strange's spell goes horribly wrong, leading to unwanted guests entering their universe.
+        </p>
+        </div>
+      </div>
+
+      <h2 class="h2">Characters</h2>
+      <div class="divrow" style="height: 690px;">
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/iron-man-tony-stark/on-screen">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/AvengersEndGameIronManCharacter.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Iron Man</h2></div>
+            </div></a> 
+          </div>
+          <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/spider-man-peter-parker/on-screen">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/AvengersEndGameSpaidermanCharacter.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Spider Man</h2></div>
+            </div></a> 
+          </div>
+          <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/wong/on-screen">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/AvengersEndGameWongCharacter.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Wong</h2></div>
+            </div></a> 
+          </div>
+          <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/doctor-strange-stephen-strange/on-screen">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/AvengersEndGameDrStrangeCharacter.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Doctor Strange</h2></div>
+            </div></a> 
+          </div>
+          <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/sandman-william-baker/in-comics">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/SpaidermanSandman.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Sandman</h2></div>
+            </div></a> 
+          </div>
+          <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/venom-eddie-brock/in-comics">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/VenonVenom.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Venom</h2></div>
+            </div></a> 
+          </div>
+          <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/green-goblin-norman-osborn/in-comics">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/SpaidermanGreenGoblin.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Green Goblin</h2></div>
+            </div></a> 
+          </div>
+          <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/doctor-octopus-otto-octavius/in-comics">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/SpaidermanDoctorOctopus.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Doctor Octavius</h2></div>
+            </div></a> 
+          </div>
+          <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/lizard-curtis-connors/in-comics">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/TheAmazingLeopard.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Lizard</h2></div>
+            </div></a> 
+        </div>
+          <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/electro-maxwell-dillon/in-comics">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/Electro.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Electro</h2></div>
+            </div></a> 
+          </div>
+        
+      </div>
+
+
+      <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">MarvelInfo is a web-page where you can find all the information regarding Marvel Movies, Series and Characters</p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+              </div>
+              <div class="email">
+                <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-envelope"></i>marvelinfo379@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Categories</div>
+            <div><a href="/nav" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Home</a></div>
+            <div><a href="/marvelmovies"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Movies</a></div>
+            <div><a href="/series"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Web-Series</a></div>
+            <div><a href="/phase"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Phases</a></div>
+            <div><a href="/demo"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Characters</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">
+              <img style="height: 100px;width: 500px;margin-top: 20px;" src="{%static 'images/MarvelStudio.png'%}" alt="">
+              <img style="height: 80px;width: 200px;margin-left: 160px;margin-top: 20px;" src="{%static 'images/MarvelLogo.png'%}" alt="">
+              
+            </div>
+            <!--
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+  
+            
+             <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter icon"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>-->
+          </div>
+        </div>
+        <div class="bottom">
+          <p></p>
+        </div>
+      </footer>
+  
+
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+       /* $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+});
+*/
+let docTitle=document.title;
+window.addEventListener('blur',()=>{
+  document.title='Bhai aaja Vapis';
+});
+window.addEventListener('focus',()=>{
+  document.title=docTitle;
+});
+
+</script>
+
+<script>
+  /*function My_Video() {
+            document.getElementById("w1").src =
+               "{%static 'video/intronav2.mp4'%}";
+            document.getElementById("vedio").load();
+        }
+        window.onload=My_Video()*/
+        
+</script>
+</body>
+</html>

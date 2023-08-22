@@ -1,0 +1,57 @@
+
+            {%load static%}
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <link rel="icon" type="image/png" href="{%static 'images/marlogo.png'%}"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Email-Sent</title>
+                <link rel="stylesheet" href="{%static 'css/email.css'%}">
+                <style>
+                    .row{
+                        background-image: url( "{%static 'images/aven.jpg'%}");
+            
+                    }
+                </style>
+            </head>
+            <body>
+            
+                <form method="post">
+                    {% csrf_token %}
+              <div class="row">
+                    
+                    <h1 style="font-size: 30px;">Password Reset Confirmation</h1>
+                    <h2 style="font-size: 21px;" class="information-text">Password reset complete</h2><br><br>
+                    
+                    
+                <div class="form-group">
+                   
+                    
+                    <h2 style="text-align: justify; font-size: 18px;">Your password has been set. You may go ahead and log in now.</h2>
+                    
+                    
+                    </div>
+                <div class="form-group">
+                        
+                  <button onclick="showSpinner()"  type="submit"><a style="text-decoration: none;color: black;" target="_blank" href="/form">Please Login </a></button>
+                    </div>
+                    <div class="footer">
+                        <h5><a  href="/form">Please click here to Sign In</a></h5>
+                    </div>
+                
+                </div>
+            </form>
+            
+            
+                <script>
+                    let docTitle=document.title;
+            window.addEventListener('blur',()=>{
+              document.title='Bhai aaja Vapis';
+            });
+            window.addEventListener('focus',()=>{
+              document.title=docTitle;
+            });
+                </script>
+            </body>
+            </html>

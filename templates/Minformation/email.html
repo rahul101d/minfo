@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" type="image/png" href="{%static 'images/marlogo.png'%}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email-Verification</title>
+    <link rel="stylesheet" href="{%static 'css/email.css'%}">
+    <style>
+        .row{
+            background-image: url( "{%static 'images/aven.jpg'%}");
+
+        }
+    </style>
+</head>
+<body>
+
+	<form method="post">
+		{% csrf_token %}
+  <div class="row">
+		
+		<h1>Forgot Password</h1>
+		<h6 class="information-text">Enter your registered Email address to reset your password.</h6>
+		
+		{%if messages%}
+        {%for a1 in messages%}
+        <label style="color: rgb(173, 31, 31);">{{a1}}</label>
+        {%endfor%}
+       {%endif%}
+    <div class="form-group">
+			<input type="email" name="email" id="user_email">
+			<p><label for="username">Email</label></p>
+		</div>
+    <div class="form-group">
+			
+      <button onclick="showSpinner()"  type="submit"><a style="text-decoration: none;color: black;" href="/reset_password_sent">Verify Email address</a></button>
+		</div>
+		<div class="footer">
+			<h5><a  href="/form">Please click here to Sign In</a></h5>
+		</div>
+	
+	</div>
+</form>
+
+
+	<script>
+		let docTitle=document.title;
+window.addEventListener('blur',()=>{
+  document.title='Bhai aaja Vapis';
+});
+window.addEventListener('focus',()=>{
+  document.title=docTitle;
+});
+	</script>
+</body>
+</html>

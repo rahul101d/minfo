@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Phase</title>
+    <link rel="icon" type="image/png" href="{%static 'images/marlogo.png'%}"/>
+    <link rel="stylesheet" href="{%static 'css/quotes.css'%}">
+    <style>
+      .item:nth-child(1) {
+  background-image: url("{%static 'images/marvelphase1.jpg'%}");
+  background-position: 52% 35%;
+}
+.item:nth-child(2) {
+  background-image: url("{%static 'images/phase2.jpg'%}");
+  background-position: 30% 8%;
+}
+
+.item:nth-child(3) {
+  background-image: url("{%static 'images/phase3.jpg'%}");
+  background-position: 52% 8%;
+}
+
+.item:nth-child(4) {
+  background-image: url("{%static 'images/phase4.jpg'%}");
+  background-position: 45% 8%;
+}
+.item:nth-child(5) {
+  background-image: url("{%static 'images/phase5.jpg'%}");
+  background-position: 45% 8%;
+}</style>
+
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a href="/nav">MARVEL</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="/nav" >Home</a></li>
+                <li><a href="/marvelmovies">Movies</a></li>
+                <li><a href="/series">Web-Series</a></li>
+                <li><a href="/phase">Phases</a></li>
+                <li><a href="/demo">Characters</a></li>
+                <li><a href="/accounts/logout">Logout</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+
+
+
+  <div id="div2">
+  <div class="container1">
+    <div class="item">
+      <div class="quote">
+        <p><a href="/phase1" id="nameid"> Marvel-Phase 1</a></p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="quote">
+        <p><a href="/phase2"  id="nameid"> Marvel-Phase 2</a></p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="quote">
+        <p><a href="/phase3"  id="nameid"> Marvel-Phase 3</a></p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="quote">
+        <p><a href="/phase4"  id="nameid"> Marvel-Phase 4</a></p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="quote">
+        <p><a href="/phase5"  id="nameid"> Marvel-Phase 5</a></p>
+      </div>
+    </div>
+</div>
+
+</div>
+
+<footer>
+  <div class="content">
+    <div class="left box">
+      <div class="upper">
+        <div class="topic">About us</div>
+        <p style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">MarvelInfo is a web-page where you can find all the information regarding Marvel Movies, Series and Characters</p>
+      </div>
+      <div class="lower">
+        <div class="topic">Contact us</div>
+        <div class="phone">
+          <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+        </div>
+        <div class="email">
+          <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-envelope"></i>marvelinfo379@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="middle box">
+      <div class="topic">Categories</div>
+      <div><a href="/nav" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Home</a></div>
+      <div><a href="/marvelmovies"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Movies</a></div>
+      <div><a href="/series"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Web-Series</a></div>
+      <div><a href="/phase"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Phases</a></div>
+      <div><a href="/demo"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Characters</a></div>
+    </div>
+    <div class="right box">
+      <div class="topic">
+        <img style="height: 100px;width: 500px;margin-top: 20px;" src="{%static 'images/MarvelStudio.png'%}" alt="">
+        <img style="height: 80px;width: 200px;margin-left: 160px;margin-top: 20px;" src="{%static 'images/MarvelLogo.png'%}" alt="">
+        
+      </div>
+      <!--
+      <form action="#">
+        <input type="text" placeholder="Enter email address">
+        <input type="submit" name="" value="Send">
+
+      
+       <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter icon"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </form>-->
+    </div>
+  </div>
+  <div class="bottom">
+    <p></p>
+  </div>
+</footer>
+
+
+<script>
+  let docTitle=document.title;
+window.addEventListener('blur',()=>{
+document.title='Bhai aaja Vapis';
+});
+window.addEventListener('focus',()=>{
+document.title=docTitle;
+});
+</script>
+
+
+</body>
+</html>

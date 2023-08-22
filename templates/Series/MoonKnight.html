@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="{%static 'images/marlogo.png'%}"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Knight</title>
+    <link rel="stylesheet" href="{%static 'MSeries/MoonKnight.css'%}">
+    <style>
+      .pic1{
+          background-image:url("{%static 'images/MoonKnightintro.jpg'%}");
+
+      }
+  </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="/nav">MARVEL</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="/nav" >Home</a></li>
+                    <li><a href="/marvelmovies">Movies</a></li>
+                    <li><a href="/series">Web-Series</a></li>
+                    <li><a href="/phase">Phases</a></li>
+                    <li><a href="/demo">Characters</a></li>
+                    <li><a href="/accounts/logout">Logout</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <div class="pic1">
+      <div  class="pic">
+          <video id="vedio" autoplay muted loop height="500px" width="1900px" onload="onloadfunc()">
+              <!--<source src="{%static 'video/intronav.mp4'%}" type="video/mp4">
+              <source id="w1" src="{%static 'video/intronav.mp4'%}" type="video/mp4">-->
+            </video>
+      </div>
+
+  </div>
+
+    <h2 class="h21">Moon Knight</h2>    
+      <div class="divrow"  style="height: 400px; margin-left: 300px;">
+        <div class="po">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/moon.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/moontitle.png'%}" alt="" class="title">
+                <img src="https://static.wikia.nocookie.net/vsbattles/images/f/fb/Moon_knight.png/revision/latest?cb=20220401235634" alt="" class="character">
+              </div>
+          </div>
+      
+      <div class="po" style="margin-left: 40px;">
+        <table>
+          <tr id="tr">
+            <td id="td">Created by</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.google.com/search?q=jeremy+slater&rlz=1C1CHBF_enIN986IN986&oq=Jeremy+Slater&gs_lcrp=EgZjaHJvbWUqDAgAEAAYQxjjAhiKBTIMCAAQABhDGOMCGIoFMgkIARAuGEMYigUyCQgCEAAYQxiKBTIHCAMQABiABDINCAQQLhivARjHARiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDExNjhqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8">	Jeremy Slater</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Based on</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.marvel.com/comics/discover/2299/ant-man-the-origin">Marvel Comics</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Produced by</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.imdb.com/name/nm3341711/">Peter Cameron</a></td>
+          </tr>	
+          <tr id="tr">
+            <td id="td">Production Company</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.marvel.com/movies">Marvel Studios</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Original Release </td>
+            <td id="td1">:</td>
+            <td id="td">March 30 –
+                May 4, 2022</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Running time</td>
+            <td id="td1">:</td>
+            <td id="td"> 45-53 Minutes</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">No. of Episodes</td>
+            <td id="td1">:</td>
+            <td id="td">6</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Genre</td>
+            <td id="td1">:</td>
+            <td id="td">	
+                Action-adventure, 
+                Fantasy, 
+                Psychological horror, 
+                Superhero</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Rating</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.imdb.com/title/tt10234724/">7.3/10 IMDb</a> | <a target="_blank" href="https://www.rottentomatoes.com/tv/moon_knight">86% Rotten Tomatoes</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+      <h2 class="h2">Moon Knight Official Trailer</h2>
+      <div class="divrow" style="height: 640px;">
+        <iframe id="iframe" width="1200" height="600" src="https://www.youtube.com/embed/x7Krla_UxRg" title="Marvel Studios’ Moon Knight | Official Trailer | Disney+" frameborder="1px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+      </div>
+
+      <!--Movie Cast-->
+      <h2 class="h2">Series Cast</h2>
+      <div class="divrow" style="height: 260px;">
+        <div class="po"><a target="_blank" title="Oscar Isaac" href="https://www.google.com/search?rlz=1C1CHBF_enIN986IN986&q=Oscar+Isaac&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwryCqvKDIyUuLUz9U3SK4qM07TEstOttIvKQOi-IKi_PSixFyr5MTikkWs3P7FyYlFCp7FiYnJO1gZAV5wEPdFAAAA&sa=X&ved=2ahUKEwjGufmD0LaAAxWuplYBHYH3ANcQgOQBegQIJRAE&biw=1536&bih=747&dpr=1.25">
+          <div class="card1">
+              <div class="wrapper1">
+                <img src="https://flxt.tmsimg.com/assets/493617_v9_bc.jpg" class= "cover-image1" alt="">
+              </div>
+              <div class="wrapper2"><h2 class="heading1">Oscar Isaac</h2></div>
+            </div></a> 
+        </div>
+        <div class="po"><a target="_blank" title="May Calamawy" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=May+Calamawy&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwryCqvKDIyUuLSz9U3KMmxMMpL0hLLTrbSLykDoviCovz0osRcq-TE4pJFrDy-iZUKzok5ibmJ5ZU7WBknsDECAP4zo3tKAAAA&lei=XHbGZMDuOaiC2roPl_us0AI">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2022/03/24/3139601-1962785205.jpg?itok=mJedi3CK" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">May Calamawy</h2></div>
+              </div></a> 
+          </div>
+          <div class="po"><a target="_blank" title="Ethan Hawke" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Ethan+Hawke&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwryCqvKDIyUuLUz9U3MDQtMy7SEstOttIvKQOi-IKi_PSixFyr5MTikkWs3K4lGYl5Ch6J5dmpO1gZJ7AxAgCujFrlSAAAAA&lei=13bGZPfDE9C32roP_-eiuA0">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="data:image/jpeg;base64,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" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Ethan Hawke</h2></div>
+              </div></a> 
+          </div>
+          <div class="po"><a target="_blank" title="F. Murray Abraham" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=F.+Murray+Abraham&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwryCqvKDIyUuLUz9U3MDTLTjLXEstOttIvKQOi-IKi_PSixFyr5MTikkWsgm56Cr6lRUWJlQqOSUWJGYm5O1gZJ7AxAgAWXTuUTgAAAA&lei=PnfGZP7cK63K2roP9t-P4Ag">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://flxt.tmsimg.com/assets/20601_v9_bc.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">F. Murray Abraham</h2></div>
+              </div></a> 
+          </div>
+          <div class="po"><a target="_blank" title="Saba Mubarak" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Saba+Mubarak&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwryCqvKDIyUuLWz9U3MDQ0yDIsMdISy0620i8pA6L4gqL89KLEXKvkxOKSRaw8wYlJiQq-pUmJRYnZO1gZJ7AxAgBTwR39SwAAAA&lei=Q3fGZNHjHLey2roPp86YuA0">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="data:image/jpeg;base64,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" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Saba Mubarak</h2></div>
+              </div></a> 
+          </div>
+          <div class="po"><a target="_blank" title="Saffron Hocking" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Saffron+Hocking&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwryCqvKDIyUuLWz9U3MDQszDYwqdASy0620i8pA6L4gqL89KLEXKvkxOKSRaz8wYlpaUX5eQoe-cnZmXnpO1gZJ7AxAgAwQVCvTgAAAA&lei=eXfGZM31M_-v2roPuK2SwA0">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://www.themoviedb.org/t/p/w500/59fibQb4J3zcvC9awsVS2B0y6ga.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Saffron Hocking</h2></div>
+              </div></a> 
+          </div>   
+      </div>
+
+      <!--Overview-->
+      <h2 class="h2">Moon Knight Hulk Overview</h2>
+      <div class="divrow" style="height: 90px;">
+        <div class="po" style="margin-right: 40px; margin-left: 33px;padding: 0px 20px 20px 20px;">
+          <p id="para">Moon Knight follows Steven Grant, a mild-mannered gift-shop employee, who becomes plagued with blackouts and memories of another life. Steven discovers he has dissociative identity disorder and shares a body with mercenary Marc Spector. As Steven/Marc's enemies converge upon them, they must navigate their complex identities while thrust into a deadly mystery among the powerful gods of Egypt.
+        </p>
+        </div>
+      </div>
+
+      <h2 class="h2">Characters</h2>
+      <div class="divrow" style="height: 370px;">
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/moon-knight-marc-spector/in-comics">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/MoonKnight1.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">MoonKnight</h2></div>
+            </div></a> 
+          </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/khonshu">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/Khonshu.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Khonshu</h2></div>
+            </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/arthur-harrow">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/ArthurHarrow.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Arthur Harrow</h2></div>
+            </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/ammit">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/Ammit.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Ammit</h2></div>
+            </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/taweret">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/Tawret.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Taweret</h2></div>
+            </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://marvelcinematicuniverse.fandom.com/wiki/Scarlet_Scarab">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/Layla.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Layla</h2></div>
+            </div></a> 
+        </div>
+      </div>
+
+
+      <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">MarvelInfo is a web-page where you can find all the information regarding Marvel Movies, Series and Characters</p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+              </div>
+              <div class="email">
+                <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-envelope"></i>marvelinfo379@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Categories</div>
+            <div><a href="/nav" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Home</a></div>
+            <div><a href="/marvelmovies"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Movies</a></div>
+            <div><a href="/series"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Web-Series</a></div>
+            <div><a href="/phase"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Phases</a></div>
+            <div><a href="/demo"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Characters</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">
+              <img style="height: 100px;width: 500px;margin-top: 20px;" src="{%static 'images/MarvelStudio.png'%}" alt="">
+              <img style="height: 80px;width: 200px;margin-left: 160px;margin-top: 20px;" src="{%static 'images/MarvelLogo.png'%}" alt="">
+              
+            </div>
+            <!--
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+  
+            
+             <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter icon"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>-->
+          </div>
+        </div>
+        <div class="bottom">
+          <p></p>
+        </div>
+      </footer>
+  
+
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+       /* $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+});
+*/
+let docTitle=document.title;
+window.addEventListener('blur',()=>{
+  document.title='Bhai aaja Vapis';
+});
+window.addEventListener('focus',()=>{
+  document.title=docTitle;
+});
+
+</script>
+
+<script>
+  /*function My_Video() {
+            document.getElementById("w1").src =
+               "{%static 'video/intronav2.mp4'%}";
+            document.getElementById("vedio").load();
+        }
+        window.onload=My_Video()*/
+        
+</script>
+</body>
+</html>

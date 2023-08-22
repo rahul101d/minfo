@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="{%static 'images/marlogo.png'%}"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IThe Amazing Spider-Man
+    </title>
+    <link rel="stylesheet" href="{%static 'MovieCss/TheAmazing1.css'%}">
+    <style>
+      .pic1{
+          background-image:url("{%static 'images/TheAmazing1intro.jpg'%}");
+
+      }
+  </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="/nav">MARVEL</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="/nav" >Home</a></li>
+                    <li><a href="/marvelmovies">Movies</a></li>
+                    <li><a href="/series">Web-Series</a></li>
+                    <li><a href="/phase">Phases</a></li>
+                    <li><a href="/demo">Characters</a></li>
+                    <li><a href="/accounts/logout">Logout</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <div class="pic1">
+      <div  class="pic">
+          <video id="vedio" autoplay muted loop height="500px" width="1900px" onload="onloadfunc()">
+              <!--<source src="{%static 'video/intronav.mp4'%}" type="video/mp4">
+              <source id="w1" src="{%static 'video/intronav.mp4'%}" type="video/mp4">-->
+            </video>
+      </div>
+
+  </div>
+
+    <h2 class="h21">The Amazing Spider-Man</h2>    
+      <div class="divrow"  style="height: 400px; margin-left: 300px;">
+        <div class="po">
+            <div class="card">
+                <div class="wrapper">
+                  <img src="{%static 'images/spiderasm.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <img src="{%static 'images/spiderasmtitle.png'%}" alt="" class="title">
+                <img src="{%static 'images/spiderasmc.png'%}" alt="" id="spiderasm">
+              </div>
+        </div>
+      
+      <div class="po" style="margin-left: 40px;">
+        <table>
+          <tr id="tr">
+            <td id="td">Directed by</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.google.com/search?q=marc+webb&rlz=1C1CHBF_enIN986IN986&oq=Marc+Webb&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyBwgBEC4YgAQyBwgCEAAYgAQyDwgDEC4YChiDARixAxiABDIHCAQQLhiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBBzI3NGowajSoAgCwAgA&sourceid=chrome&ie=UTF-8">Marc Webb</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Based on</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.marvel.com/comics/issue/6482/the_amazing_spider-man_1963_1">	
+                Spider-Man
+                by Stan Lee
+                Steve Ditko</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Produced by</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.google.com/search?q=laura+ziskin&rlz=1C1CHBF_enIN986IN986&oq=Laura+Ziskin&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyBwgBEC4YgAQyBwgCEAAYgAQyCAgDEAAYFhgeMggIBBAAGBYYHjIICAUQABgWGB4yCAgGEAAYFhgeMggIBxAAGBYYHjIICAgQABgWGB4yCggJEAAYhgMYigXSAQc2MzJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">Laura Ziskin</a></td>
+          </tr>	
+          <tr id="tr">
+            <td id="td">Production Company</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.marvel.com/movies">Marvel Studios</a></td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Release Date</td>
+            <td id="td1">:</td>
+            <td id="td">July 3, 2012</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Running time</td>
+            <td id="td1">:</td>
+            <td id="td">2 Hour 16 Minutes</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Budget	</td>
+            <td id="td1">:</td>
+            <td id="td">$200–230 million</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Box office</td>
+            <td id="td1">:</td>
+            <td id="td">$758 million</td>
+          </tr>
+          <tr id="tr">
+            <td id="td">Rating</td>
+            <td id="td1">:</td>
+            <td id="td"><a target="_blank" href="https://www.imdb.com/title/tt0948470/">6.9/10 IMDb</a> | <a target="_blank" href="https://www.rottentomatoes.com/m/the_amazing_spider_man">71% Rotten Tomatoes</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+      <h2 class="h2">The Amazing Spider-Man Official Trailer</h2>
+      <div class="divrow" style="height: 640px;">
+        <iframe id="iframe" width="1200" height="600" src="https://www.youtube.com/embed/-tnxzJ0SSOw" title="THE AMAZING SPIDER-MAN 3D - Official Trailer" frameborder="1px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+      </div>
+
+      <!--Movie Cast-->
+      <h2 class="h2">Movie Cast</h2>
+      <div class="divrow" style="height: 260px;">
+        <div class="po"><a target="_blank" title="Andrew Garfield" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Andrew+Garfield&stick=H4sIAAAAAAAAAONgFuLVT9c3NEwzMzYoi88pU-LUz9U3SMvKTcrWEspOttJPy8zJBRNWyYnFJYtY-R3zUopSyxXcE4vSMlNzUnawMk5gYwQAVW98pUgAAAA&lei=Tc3EZOjiN_2eseMPjeWD6Aw">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://ntvb.tmsimg.com/assets/assets/506866_v9_bd.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Andrew Garfield</h2></div>
+              </div></a> 
+          </div>
+        <div class="po"><a target="_blank" title="Emma Stone" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Emma+Stone&stick=H4sIAAAAAAAAAONgFuLSz9U3SCssMcwrVuIEsS0rM6qKtYSyk6300zJzcsGEVXJicckiVi7X3NxEheCS_LzUHayME9gYAWU5aJlAAAAA&lei=HlnGZNLoNYmVseMPtZ622Aw">
+          <div class="card1">
+              <div class="wrapper1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Emma_Stone_at_Maniac_UK_premiere_%28cropped%29.jpg" class= "cover-image1" alt="">
+              </div>
+              <div class="wrapper2"><h2 class="heading1">Emma Stone</h2></div>
+            </div></a> 
+        </div>
+        <div class="po"><a target="_blank" title="Rhys Ifans" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Rhys+Ifans&stick=H4sIAAAAAAAAAONgFuLSz9U3SCssMcwrVuIEsY1zzQqytYSyk6300zJzcsGEVXJicckiVq6gjMpiBc-0xLziHayME9gYAZibTIRAAAAA&lei=qlnGZMrrD5neseMP2Ly8-AI">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://m.media-amazon.com/images/M/MV5BMTkyMzU0NDM4Ml5BMl5BanBnXkFtZTcwMDkzMDg5Nw@@._V1_.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Rhys <br> Ifans</h2></div>
+              </div></a> 
+          </div>
+          <div class="po"><a target="_blank" title="Sally Field" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Sally+Field&stick=H4sIAAAAAAAAAONgFuLSz9U3SCssMcwrVuIEsQ2zyk2KtISyk6300zJzcsGEVXJicckiVu7gxJycSgW3zNSclB2sjBPYGAHSM75eQQAAAA&lei=2lnGZLfREbKjseMPqfqY8A0">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://cdn.britannica.com/38/239838-050-BBF348BD/Actress-Sally-Field-34th-Annual-Palm-Springs-International-Film-Festival-2023.jpg" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Sally <br> Field</h2></div>
+              </div></a> 
+          </div>
+          <div class="po"><a target="_blank" title="Martin Sheen" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Martin+Sheen&stick=H4sIAAAAAAAAAONgFuLSz9U3SCssMcwrVuIAsTPKkoy0hLKTrfTTMnNywYRVcmJxySJWHt_EopLMPIXgjNTUvB2sjBPYGAGvo7OIQQAAAA&lei=FlrGZKbdNoqgseMP8ZeVgAs">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://i.guim.co.uk/img/media/dfe107e63cc3a39d061d2752c9a29470cfb4a3f0/735_335_1829_1098/master/1829.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=abe11e44c8e725dcd33c680c9b93c9b7" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Martin Sheen</h2></div>
+              </div></a> 
+          </div>   
+          <div class="po"><a target="_blank" title="Dane DeHaan" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&hl=en-US&biw=1536&bih=747&q=Dane+DeHaan&stick=H4sIAAAAAAAAAONgFuLSz9U3KMwusyxPUgKzk8uySrINtISyk6300zJzcsGEVXJicckiVm6XxLxUBZdUj8TEvB2sjBPYGAHYYD5DQgAAAA&ved=2ahUKEwiI_tD4wbaAAxXNl1YBHaR7DtcQ-BZ6BAgfEAw">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="data:image/jpeg;base64,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" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Dane DeHaan</h2></div>
+              </div></a> 
+          </div>
+          <div class="po"><a target="_blank" title="Irrfan Khan" href="https://www.google.com/search?sa=X&rlz=1C1CHBF_enIN986IN986&biw=1536&bih=747&q=Irrfan+Khan&stick=H4sIAAAAAAAAAONgFuLSz9U3SCssMcwrVgKzjXON86rStISyk6300zJzcsGEVXJicckiVm7PoqK0xDwF74zEvB2sjBPYGAHNucsGQgAAAA&lei=Q1rGZN7FCYndseMPqZC_oAo">
+            <div class="card1">
+                <div class="wrapper1">
+                  <img src="https://static.wikia.nocookie.net/jurassicpark/images/d/db/IrrfanKhan.jpg/revision/latest?cb=20151221134237" class= "cover-image1" alt="">
+                </div>
+                <div class="wrapper2"><h2 class="heading1">Irrfan Khan</h2></div>
+              </div></a> 
+          </div>  
+      </div>
+
+      <!--Overview-->
+      <h2 class="h2">The Amazing Spider-Man Overview</h2>
+      <div class="divrow" style="height: 90px;">
+        <div class="po" style="margin-right: 40px; margin-left: 33px;padding: 0px 20px 20px 20px;">
+          <p id="para">A teenage Peter Parker grapples with both high school and amazing super-human crises as his alter-ego Spider-Man. Peter Parker, an outcast high school student, gets bitten by a radioactive spider and attains superpowers.  Soon, he is forced to use his abilities to fight a monstrous foe. After Peter Parker is bitten by a genetically altered spider, he gains newfound, spider-like powers and ventures out to save the city from the machinations of a mysterious reptilian foe.
+        </p>
+        </div>
+      </div>
+
+      <h2 class="h2">Characters</h2>
+      <div class="divrow" style="height: 370px;">
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/spider-man-peter-parker/in-comics">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/TheAmazing1.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Spider-Man</h2></div>
+            </div></a> 
+          </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/harry-osborn">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/TheAmazingHarry.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Harry</h2></div>
+            </div></a> 
+        </div>
+        <div class="po1"><a target="_blank" href="https://www.marvel.com/characters/lizard-curtis-connors/in-comics">
+            <div class="card1" id="card1" >
+                <div class="wrapper1" id="wrapper1">
+                  <img src="{%static 'images/TheAmazingLeopard.jpg'%}" class= "cover-image" alt="">
+                </div>
+                <div class="wrapper2" id="wrapper2"><h2 class="heading2">Lizard</h2></div>
+            </div></a> 
+        </div>
+      </div>
+
+
+      <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="upper">
+              <div class="topic">About us</div>
+              <p style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">MarvelInfo is a web-page where you can find all the information regarding Marvel Movies, Series and Characters</p>
+            </div>
+            <div class="lower">
+              <div class="topic">Contact us</div>
+              <div class="phone">
+                <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+              </div>
+              <div class="email">
+                <a href="#" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;"><i class="fas fa-envelope"></i>marvelinfo379@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="middle box">
+            <div class="topic">Categories</div>
+            <div><a href="/nav" style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Home</a></div>
+            <div><a href="/marvelmovies"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Movies</a></div>
+            <div><a href="/series"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Web-Series</a></div>
+            <div><a href="/phase"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Phases</a></div>
+            <div><a href="/demo"style="font-size: 15px;font-weight: 500px; font-family: 'Marvel', sans-serif; word-spacing: normal;">Characters</a></div>
+          </div>
+          <div class="right box">
+            <div class="topic">
+              <img style="height: 100px;width: 500px;margin-top: 20px;" src="{%static 'images/MarvelStudio.png'%}" alt="">
+              <img style="height: 80px;width: 200px;margin-left: 160px;margin-top: 20px;" src="{%static 'images/MarvelLogo.png'%}" alt="">
+              
+            </div>
+            <!--
+            <form action="#">
+              <input type="text" placeholder="Enter email address">
+              <input type="submit" name="" value="Send">
+  
+            
+             <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter icon"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>-->
+          </div>
+        </div>
+        <div class="bottom">
+          <p></p>
+        </div>
+      </footer>
+  
+
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+       /* $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+});
+*/
+let docTitle=document.title;
+window.addEventListener('blur',()=>{
+  document.title='Bhai aaja Vapis';
+});
+window.addEventListener('focus',()=>{
+  document.title=docTitle;
+});
+
+</script>
+
+<script>
+  /*function My_Video() {
+            document.getElementById("w1").src =
+               "{%static 'video/intronav2.mp4'%}";
+            document.getElementById("vedio").load();
+        }
+        window.onload=My_Video()*/
+        
+</script>
+</body>
+</html>
